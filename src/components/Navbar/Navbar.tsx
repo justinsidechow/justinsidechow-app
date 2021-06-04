@@ -2,7 +2,6 @@ import * as React from "react";
 import { Component } from "react";
 import MenuItems from "./MenuItems";
 import "./Navbar.css";
-import "./MenuItems.css";
 
 class Navbar extends Component {
   state = {
@@ -15,10 +14,10 @@ class Navbar extends Component {
 
   render() {
     return (
-      <nav className="NavbarItems">
-        <h1 className="navbar-logo">
+      <nav className="navbar-logo-background">
+        <h1 className="navbar-name">
           <i className="fab fa-react"></i>
-          React
+          JustinsideChow
         </h1>
         <div className="menu-icon" onClick={this.handleClick}>
           <i
