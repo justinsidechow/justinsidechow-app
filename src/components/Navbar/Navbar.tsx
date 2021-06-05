@@ -17,7 +17,9 @@ class Navbar extends Component {
       <nav className="navbar-logo-background">
         <h1 className="navbar-name">
           <i className="fab fa-react"></i>
-          JustinsideChow
+          <a className="navbar-name-link" href="/">
+            JustinsideChow
+          </a>
         </h1>
         <div className="menu-icon" onClick={this.handleClick}>
           <i

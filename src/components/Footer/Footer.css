@@ -1,0 +1,45 @@
+.copyright {
+  color: grey;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 8px;
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+}
+
+.copyright-left-right {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.div {
+  display: none;
+}
+
+.copyright-link {
+  color: grey;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: relative;
+  display: block;
+  transition-duration: 0.2s;
+}
+
+.copyright-link:visited {
+  color: grey;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.copyright-link:hover {
+  padding-top: 10px;
+  transition-duration: 0.2s;
+}
+
+.copyright-link:active {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}

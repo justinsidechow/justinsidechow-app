@@ -18,6 +18,17 @@
   cursor: pointer;
 }
 
+.navbar-name-link {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-name-link:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 .fa-react {
   margin-left: 0.5rem;
   font-size: 1.6rem;
