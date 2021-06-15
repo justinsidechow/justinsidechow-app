@@ -1,6 +1,35 @@
+.social {
+  color: transparent;
+  padding-top: 20px;
+}
+
+.social-icon {
+  color:transparent;
+  margin: 15px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.social-icon:hover{
+  color:transparent;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  position: static;
+  transition-duration: 0.33s;
+}
+
+.website-description{
+  color: gray;
+  padding:0.3rem;
+}
+
 .copyright {
   color: grey;
-  padding: 20px;
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-gap: 8px;

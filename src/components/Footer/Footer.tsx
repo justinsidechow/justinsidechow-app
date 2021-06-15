@@ -11,9 +11,45 @@ for the copyright-link.
  */
 
 class Footer extends Component {
+
+  icon() {
+    return (
+      <div className='social'>
+        <a href='https://github.com/justinsidechow'>
+          <img className = 'social-icon' src={process.env.PUBLIC_URL + '/Logo/github-icon.png'} />
+        </a>
+        <a href='https://linkedin.com/justinsidechow'>
+          <img className = 'social-icon' src={process.env.PUBLIC_URL + '/Logo/linkedin-icon.png'} />
+        </a>
+        <a href='https://twitch.tv/jbooty'>
+          <img className = 'social-icon' src={process.env.PUBLIC_URL + '/Logo/twitch-icon.png'} />
+        </a>
+        <a href='https://www.youtube.com/channel/UCQ1fJzVpKueH3K3qRDIjgVg'>
+          <img className = 'social-icon' src={process.env.PUBLIC_URL + '/Logo/youtube-icon.png'} />
+        </a>
+        <a href='https://mausoleumclothing.com'>
+          <img className = 'social-icon' src={process.env.PUBLIC_URL + '/Logo/clothing-icon.png'} />
+        </a>
+      </div>
+    )
+  };
+
   render() {
     return (
-      <p>
+      <div>
+        {this.icon()}
+        <div>
+          <div className='website-description'>
+          Justinsidechow.com written in
+          </div>
+          <div className='website-description'>
+          Typescript/React/CSS/HTML
+          </div>
+          <div className='website-description'>
+          by Justin Chow
+          </div>
+
+        </div>
         <ul className="copyright">
           <li className="copyright-left-right">Copyright &copy; </li>
           <li>
@@ -27,7 +63,7 @@ class Footer extends Component {
             {" " + new Date().getFullYear()}
           </li>
         </ul>
-      </p>
+      </div>
     );
   }
 }

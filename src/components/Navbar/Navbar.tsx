@@ -14,9 +14,9 @@ class Navbar extends Component {
 
   render() {
     return (
-      <nav className="navbar-logo-background">
+      <nav className="navbar-background">
         <h1 className="navbar-name">
-          <i className="fab fa-react"></i>
+          <i className="navbar-menu"></i>
           <a className="navbar-name-link" href="/">
             JustinsideChow
           </a>

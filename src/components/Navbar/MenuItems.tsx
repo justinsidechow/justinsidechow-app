@@ -1,32 +1,37 @@
 const MenuItems = [
   {
-    title: "About Me",
-    url: "",
+    title: "About",
+    url: "/about",
     cName: "nav-links", //cName == class name
   },
   {
     title: "Github",
-    url: "",
+    url: "/github",
     cName: "nav-links", //cName == class name
   },
   {
     title: "Linkedin",
-    url: "",
+    url: "linkedin",
     cName: "nav-links", //cName == class name
   },
   {
     title: "Twitch.tv",
-    url: "",
+    url: "/twitch",
     cName: "nav-links", //cName == class name
   },
   {
     title: "Youtube",
-    url: "",
+    url: "/youtube",
+    cName: "nav-links", //cName == class name
+  },
+  {
+    title: "Mausoleum",
+    url: "/mausoleum",
     cName: "nav-links", //cName == class name
   },
   {
     title: "Contact",
-    url: "",
+    url: "/contact",
     cName: "nav-links", //cName == class name
   },
 ];
