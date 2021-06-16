@@ -9,6 +9,7 @@
   width: 30px;
   height: 30px;
   cursor: pointer;
+  transition-duration: 0.33s;
 }
 
 .social-icon:hover{
@@ -24,17 +25,18 @@
 }
 
 .website-description{
-  color: gray;
+  color:transparent;
   padding:0.3rem;
+  text-shadow: 0px 0px 0px grey;
 }
 
 .copyright {
-  color: grey;
+  color:transparent;
+  text-shadow: 0px 0px 0px grey;
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-gap: 8px;
   list-style: none;
-  text-align: center;
   justify-content: center;
 }
 
