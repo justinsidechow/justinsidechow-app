@@ -18,7 +18,7 @@ class Footer extends Component {
         <a href='https://github.com/justinsidechow'>
           <img className = 'social-icon' src={process.env.PUBLIC_URL + '/Logo/github-icon.png'} />
         </a>
-        <a href='https://linkedin.com/justinsidechow'>
+        <a href='https://www.linkedin.com/in/justinsidechow/'>
           <img className = 'social-icon' src={process.env.PUBLIC_URL + '/Logo/linkedin-icon.png'} />
         </a>
         <a href='https://twitch.tv/jbooty'>
@@ -46,7 +46,7 @@ class Footer extends Component {
           Typescript/React/CSS/HTML
           </div>
           <div className='website-description'>
-          by Justin Chow
+          by Justin Man Hon Chow
           </div>
 
         </div>
@@ -54,7 +54,7 @@ class Footer extends Component {
           <li className="copyright-left-right">Copyright &copy; </li>
           <li>
             <div>
-              <a className="copyright-link" href="/contact" target="_blank">
+              <a className="copyright-link" href="/contact">
                 JustinsideChow
               </a>
             </div>

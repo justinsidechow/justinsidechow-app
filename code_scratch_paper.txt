@@ -1,0 +1,13 @@
+<Router>
+                <Link to={item.url}>{item.title}</Link>
+                <a className={item.cName} href={item.url}>
+                  {item.title}
+</Router>
+
+
+<Router>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Route path="/" component={IndexPage} />
+        <Route path="/about" component={AboutPage} />
+</Router>

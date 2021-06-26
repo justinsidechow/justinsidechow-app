@@ -2,6 +2,7 @@ import * as React from "react";
 import { Component } from "react";
 import MenuItems from "./MenuItems";
 import "./Navbar.css";
+import { Link, BrowserRouter as Router, Route } from 'react-router-dom';
 
 class Navbar extends Component {
   state = {
@@ -28,9 +29,7 @@ class Navbar extends Component {
           {MenuItems.map((item, index) => {
             return (
               <li key={index}>
-                <a className={item.cName} href={item.url}>
-                  {item.title}
-                </a>
+                <Link className="nav-links" to={item.url}>{item.title}</Link>
               </li>
             );
           })}
