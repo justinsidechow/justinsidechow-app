@@ -1,4 +1,4 @@
-const HomePage = () => {
+const TwitchPage = () => {
   return (
     <div>
       <h3>Home Page</h3>
@@ -6,4 +6,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default TwitchPage;

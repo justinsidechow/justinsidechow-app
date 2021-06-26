@@ -2,7 +2,7 @@ import * as React from "react";
 import { Component } from "react";
 import MenuItems from "./MenuItems";
 import "./Navbar.css";
-import { Link, BrowserRouter as Router, Route } from 'react-router-dom';
+import { Link, BrowserRouter as Router, Route } from "react-router-dom";
 
 class Navbar extends Component {
   state = {
@@ -16,10 +16,10 @@ class Navbar extends Component {
   render() {
     return (
       <nav className="navbar-background">
-          <i className="navbar-menu-logo"></i>
-          <a className="navbar-name-link" href="/">
-            JustinsideChow
-          </a>
+        <i className="navbar-menu-logo"></i>
+        <a className="navbar-name-link" href="/">
+          JustinsideChow
+        </a>
         <div className="menu-icon" onClick={this.handleClick}>
           <i
             className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}
@@ -29,7 +29,9 @@ class Navbar extends Component {
           {MenuItems.map((item, index) => {
             return (
               <li key={index}>
-                <Link className="nav-links" to={item.url}>{item.title}</Link>
+                <Link className="nav-links" to={item.url}>
+                  {item.title}
+                </Link>
               </li>
             );
           })}

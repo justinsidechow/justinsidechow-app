@@ -11,3 +11,6 @@
         <Route path="/" component={IndexPage} />
         <Route path="/about" component={AboutPage} />
 </Router>
+
+<NavBar/>
+ <Footer/>

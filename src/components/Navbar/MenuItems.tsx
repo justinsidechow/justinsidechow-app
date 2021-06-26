@@ -2,37 +2,37 @@ const MenuItems = [
   {
     title: "About",
     url: "/about",
-    pageName: "AboutPage", 
+    pageName: "AboutPage",
   },
   {
     title: "Github",
     url: "/github",
-    pageName: "AboutPage", 
+    pageName: "AboutPage",
   },
   {
     title: "Linkedin",
     url: "/linkedin",
-    pageName: "AboutPage", 
+    pageName: "AboutPage",
   },
   {
     title: "Twitch.tv",
     url: "/twitch",
-    pageName: "AboutPage", 
+    pageName: "AboutPage",
   },
   {
     title: "Youtube",
     url: "/youtube",
-    pageName: "AboutPage", 
+    pageName: "AboutPage",
   },
   {
     title: "Mausoleum",
     url: "/mausoleum",
-    pageName: "AboutPage", 
+    pageName: "AboutPage",
   },
   {
     title: "Contact",
     url: "/contact",
-    pageName: "AboutPage", 
+    pageName: "AboutPage",
   },
 ];
 

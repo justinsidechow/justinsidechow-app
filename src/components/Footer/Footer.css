@@ -4,7 +4,7 @@
 }
 
 .social-icon {
-  color:transparent;
+  color: transparent;
   margin: 15px;
   width: 30px;
   height: 30px;
@@ -12,8 +12,8 @@
   transition-duration: 0.33s;
 }
 
-.social-icon:hover{
-  color:transparent;
+.social-icon:hover {
+  color: transparent;
   margin-top: 5px;
   margin-bottom: 15px;
   margin-left: 10px;
@@ -24,14 +24,14 @@
   transition-duration: 0.33s;
 }
 
-.website-description{
-  color:transparent;
-  padding:0.3rem;
+.website-description {
+  color: transparent;
+  padding: 0.3rem;
   text-shadow: 0px 0px 0px grey;
 }
 
 .copyright {
-  color:transparent;
+  color: transparent;
   text-shadow: 0px 0px 0px grey;
   display: grid;
   grid-template-columns: repeat(3, auto);
