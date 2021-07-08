@@ -1,7 +1,7 @@
 const GithubPage = () => {
   return (
     <div>
-      <h3>About Page</h3>
+      <h3>Github Page</h3>
     </div>
   );
 };

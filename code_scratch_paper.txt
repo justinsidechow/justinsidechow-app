@@ -14,3 +14,39 @@
 
 <NavBar/>
  <Footer/>
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+
+    padding-top: 28px;
+    padding-bottom: 27px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+
+display: grid;
+  grid-template-columns: repeat(8, auto);
+  grid-gap: 0px;
+  list-style: none;
+  width: 70vw;
+  justify-content: end;
+  margin-right: 30rem;
+  margin-left: 2rem;
+
+flex-direction: column;
+    width: auto;
+    height: auto;
+    position: absolute;
+    float: right;
+    margin: auto;
+    top: 50px;
+    right: 0%;
+    animation: fadeOut 0.5s;
+    animation-delay: 0s;
+    animation-fill-mode: backwards;
+    visibility: hidden;
+
+this.state.clicked ? "nav-menu active" : "nav-menu inactive"

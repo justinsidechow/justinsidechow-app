@@ -1,7 +1,7 @@
 const YoutubePage = () => {
   return (
     <div>
-      <h3>Home Page</h3>
+      <h3>Youtube Page</h3>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 const TwitchPage = () => {
   return (
     <div>
-      <h3>Home Page</h3>
+      <h3>Twitch Page</h3>
     </div>
   );
 };
