@@ -67,7 +67,6 @@ class Navbar extends Component {
   render() {
     return (
       <nav className="navbar-background">
-        <i className="navbar-menu-logo"></i>
         <a className="navbar-site-name-link" href="/">
           JustinsideChow
         </a>

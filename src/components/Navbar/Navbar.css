@@ -1,5 +1,9 @@
 .navbar-background {
-  background: linear-gradient(90deg, rgb(0, 200, 215) 0%, rgb(60, 50, 235) 70%);
+  background: linear-gradient(
+    90deg,
+    rgb(56, 198, 244) 0%,
+    rgb(60, 50, 235) 70%
+  );
   height: 50px;
   width: auto;
   position: relative;
@@ -124,7 +128,7 @@
   .nav-menu.firstactive {
     background: linear-gradient(
       45deg,
-      rgb(0, 200, 215) 0%,
+      rgb(56, 198, 244) 0%,
       rgb(60, 50, 235) 80%
     );
     top: 50px;
@@ -137,7 +141,7 @@
   .nav-menu.inactive {
     background: linear-gradient(
       45deg,
-      rgb(0, 200, 215) 0%,
+      rgb(56, 198, 244) 0%,
       rgb(60, 50, 235) 80%
     );
     top: 50px;
@@ -154,7 +158,7 @@
   .nav-menu.active {
     background: linear-gradient(
       45deg,
-      rgb(0, 200, 215) 0%,
+      rgb(56, 198, 244) 0%,
       rgb(60, 50, 235) 80%
     );
     top: 50px;
