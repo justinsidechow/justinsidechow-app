@@ -20,12 +20,13 @@ class Footer extends Component {
             src={process.env.PUBLIC_URL + "/Logo/github-icon.png"}
           />
         </a>
+        {/*
         <a href="https://www.linkedin.com/in/justinsidechow/">
           <img
             className="social-icon"
             src={process.env.PUBLIC_URL + "/Logo/linkedin-icon.png"}
           />
-        </a>
+        </a> */}
         <a href="https://twitch.tv/jbooty">
           <img
             className="social-icon"

@@ -9,11 +9,11 @@ const MenuItems = [
     url: "/github",
     pageName: "AboutPage",
   },
-  {
+  /*{
     title: "Linkedin",
     url: "/linkedin",
     pageName: "AboutPage",
-  },
+  },*/
   {
     title: "Twitch.tv",
     url: "/twitch",

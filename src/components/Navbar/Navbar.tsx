@@ -6,23 +6,44 @@ import { Link, BrowserRouter as Router, Route } from "react-router-dom";
 
 class Navbar extends Component {
   state = {
-    clicked: false,
-    mobileNavbarClicked: false,
+    mobileNavBarMenuClicked: false,
+    mobileNavbarItemClicked: false,
     firstRender: false,
     width: 0,
     height: 0,
   };
 
+  updateDimensions = () => {
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
+  };
+
   handleClickNavMenu = () => {
-    this.setState({ clicked: !this.state.clicked });
+    this.setState({
+      mobileNavBarMenuClicked: !this.state.mobileNavBarMenuClicked,
+    });
   };
 
   handleClickNavBar = () => {
-    this.setState({ mobileNavbarClicked: !this.state.mobileNavbarClicked });
+    this.setState({
+      mobileNavbarItemClicked: !this.state.mobileNavbarItemClicked,
+    });
   };
 
+  handleClickNavSiteName = () => {
+    if (this.state.mobileNavBarMenuClicked) {
+      this.setState({ mobileNavbarItemClicked: true });
+    }
+  };
+
+  componentDidMount() {
+    window.addEventListener("resize", this.updateDimensions);
+  }
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateDimensions);
+  }
+
   handleNavMenuTransition() {
-    if (!this.state.clicked) {
+    if (!this.state.mobileNavBarMenuClicked) {
       return "fas fa-bars";
     } else {
       return "fas fa-times";
@@ -31,45 +52,41 @@ class Navbar extends Component {
 
   navMenuInitiation() {
     if (this.state.width >= 960) {
-      this.state.clicked = false;
+      this.state.mobileNavBarMenuClicked = false;
       this.state.firstRender = false;
       return "nav-menu firstactive";
     }
 
-    if (this.state.mobileNavbarClicked) {
-      this.setState({ clicked: !this.state.clicked });
-      this.state.mobileNavbarClicked = false;
+    if (this.state.mobileNavbarItemClicked) {
+      this.setState({
+        mobileNavBarMenuClicked: !this.state.mobileNavBarMenuClicked,
+      });
+      this.state.mobileNavbarItemClicked = false;
       this.state.firstRender = false;
       this.handleNavMenuTransition();
       return "nav-menu inactive";
     }
 
-    if (this.state.clicked) {
+    if (this.state.mobileNavBarMenuClicked) {
       this.state.firstRender = true;
       return "nav-menu active";
-    } else if (!this.state.clicked && this.state.firstRender) {
+    } else if (!this.state.mobileNavBarMenuClicked && this.state.firstRender) {
       return "nav-menu inactive";
     } else {
       return "nav-menu firstactive";
     }
   }
 
-  updateDimensions = () => {
-    this.setState({ width: window.innerWidth, height: window.innerHeight });
-  };
-  componentDidMount() {
-    window.addEventListener("resize", this.updateDimensions);
-  }
-  componentWillUnmount() {
-    window.removeEventListener("resize", this.updateDimensions);
-  }
-
   render() {
     return (
       <nav className="navbar-background">
-        <a className="navbar-site-name-link" href="/">
+        <Link
+          className="navbar-site-name-link"
+          to="/"
+          onClick={this.handleClickNavSiteName}
+        >
           JustinsideChow
-        </a>
+        </Link>
         <div className="menu-icon" onClick={this.handleClickNavMenu}>
           <i className={this.handleNavMenuTransition()}></i>
         </div>
