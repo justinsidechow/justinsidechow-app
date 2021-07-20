@@ -51,17 +51,19 @@ class Footer extends Component {
 
   render() {
     return (
-      <div className="footer">
+      <footer className="footer">
         {this.icon()}
         <div>
           <div className="website-description">
             Justinsidechow.com written in
           </div>
-          <div className="website-description">Typescript/React/CSS/HTML</div>
+          <div className="website-description">Typescript/React/HTML/CSS</div>
           <div className="website-description">by Justin Man Hon Chow</div>
         </div>
         <ul className="copyright">
-          <li className="copyright-left-right">Copyright &copy; </li>
+          <li className="copyright-left-right">
+            Copyright &copy; {" " + new Date().getFullYear()}
+          </li>
           <li>
             <div>
               <a className="copyright-link" href="/contact">
@@ -69,11 +71,9 @@ class Footer extends Component {
               </a>
             </div>
           </li>
-          <li className="copyright-left-right">
-            {" " + new Date().getFullYear()}
-          </li>
+          <li className="copyright-left-right">All Rights Reserved</li>
         </ul>
-      </div>
+      </footer>
     );
   }
 }

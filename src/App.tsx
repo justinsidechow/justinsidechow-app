@@ -19,32 +19,34 @@ function App() {
       <section className="App">
         <BrowserRouter>
           <NavBar />
-          <Switch>
-            <Route exact path="/">
-              {HomePage}
-            </Route>
-            <Route exact path="/about">
-              {AboutPage}
-            </Route>
-            <Route exact path="/github">
-              {GithubPage}
-            </Route>
-            <Route exact path="/linkedin">
-              {LinkedinPage}
-            </Route>
-            <Route exact path="/twitch">
-              {TwitchPage}
-            </Route>
-            <Route exact path="/youtube">
-              {YoutubePage}
-            </Route>
-            <Route exact path="/mausoleum">
-              {MausoleumPage}
-            </Route>
-            <Route exact path="/contact">
-              {ContactPage}
-            </Route>
-          </Switch>
+          <div className="content">
+            <Switch>
+              <Route exact path="/">
+                {HomePage}
+              </Route>
+              <Route exact path="/about">
+                {AboutPage}
+              </Route>
+              <Route exact path="/github">
+                {GithubPage}
+              </Route>
+              <Route exact path="/linkedin">
+                {LinkedinPage}
+              </Route>
+              <Route exact path="/twitch">
+                {TwitchPage}
+              </Route>
+              <Route exact path="/youtube">
+                {YoutubePage}
+              </Route>
+              <Route exact path="/mausoleum">
+                {MausoleumPage}
+              </Route>
+              <Route exact path="/contact">
+                {ContactPage}
+              </Route>
+            </Switch>
+          </div>
         </BrowserRouter>
         <Footer />
       </section>

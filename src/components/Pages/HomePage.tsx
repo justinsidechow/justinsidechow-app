@@ -1,4 +1,4 @@
-import "./HomePage.css";
+import "./Page.css";
 
 const HomePage = () => {
   return (
@@ -10,9 +10,13 @@ const HomePage = () => {
         }
       ></img>
       <div className="home-page-mission">
-        Creating the future <br></br>
-        0ne line at a time <br></br>
+        Programming the future <br></br>
+        One line at a time <br></br>
+        <a href="/about">
+          <button className="learn-more-button">Learn More Here</button>
+        </a>
       </div>
+      <div>this is an example</div>
     </div>
   );
 };

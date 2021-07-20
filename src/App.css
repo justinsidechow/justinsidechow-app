@@ -5,20 +5,16 @@
   font-family: "Montserrat", sans-serif;
 }
 
-html,
-body {
-  height: 100%;
-}
-body {
-  display: flex;
-  flex-direction: column;
-}
-
 .content {
+  flex: 1 0 auto;
+  background-color: ;
 }
 
 .App {
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {

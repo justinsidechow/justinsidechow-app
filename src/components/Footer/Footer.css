@@ -74,13 +74,34 @@
   text-decoration: underline;
 }
 
-.footer,
-.push {
+.footer {
   background: linear-gradient(
     90deg,
     rgb(56, 198, 244) 0%,
     rgb(60, 50, 235) 70%
   );
-  flex-shrink: 0;
   padding: 20px;
+}
+
+@media screen and (max-width: 960px) {
+  .copyright {
+    display: inline-block;
+    grid-gap: 0px;
+  }
+
+  .copyright-left-right {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .copyright-link {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: auto;
+  }
+
+  .copyright-link:hover {
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
 }
