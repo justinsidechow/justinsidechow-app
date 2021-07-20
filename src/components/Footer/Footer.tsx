@@ -51,7 +51,7 @@ class Footer extends Component {
 
   render() {
     return (
-      <div>
+      <div className="footer">
         {this.icon()}
         <div>
           <div className="website-description">

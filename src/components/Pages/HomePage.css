@@ -1,4 +1,9 @@
 .container {
+  background: linear-gradient(
+    90deg,
+    rgb(56, 198, 244) 0%,
+    rgb(60, 50, 235) 70%
+  );
   position: relative;
   text-align: center;
   color: white;
@@ -14,4 +19,9 @@
   top: 20%;
   left: 5%;
   font-size: 50px;
+}
+
+.content {
+  flex: 1 0 auto;
+  padding: 20px;
 }
