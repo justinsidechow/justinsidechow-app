@@ -6,14 +6,18 @@ const HomePage = () => {
     <div>
       <div className="container">
         <img
-          className="home-page-main-image"
+          className="main-image"
           src={process.env.PUBLIC_URL + "/Photo/place-holder-home-page.JPG"}
         ></img>
         <div className="home-page-mission">
-          Programming the future <br></br>
-          One line at a time <br></br>
+          <div className="home-page-full-name">Justin Chow</div>
+          Programming the future
+          <br></br>
+          One line at a time
+          <br></br>
+          <br></br>
           <Link className="learn-more-button" to="/about">
-            Learn More Here
+            Learn more here
           </Link>
         </div>
       </div>

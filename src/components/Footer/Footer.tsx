@@ -11,7 +11,7 @@ for the copyright-link.
  */
 
 class Footer extends Component {
-  icon() {
+  icon_business() {
     return (
       <div className="social">
         <a href="https://github.com/justinsidechow">
@@ -49,10 +49,36 @@ class Footer extends Component {
     );
   }
 
+  icon_social() {
+    return (
+      <div className="social">
+        <a href="https://twitter.com/justinsidechow">
+          <img
+            className="social-icon"
+            src={process.env.PUBLIC_URL + "/Logo/twitter-icon.png"}
+          />
+        </a>
+        <a href="https://www.instagram.com/justinsidechow/">
+          <img
+            className="social-icon"
+            src={process.env.PUBLIC_URL + "/Logo/instagram-icon.png"}
+          />
+        </a>
+        <a href="mailto:justinsidechow@gmail.com">
+          <img
+            className="social-icon"
+            src={process.env.PUBLIC_URL + "/Logo/email-icon.png"}
+          />
+        </a>
+      </div>
+    );
+  }
+
   render() {
     return (
       <footer className="footer">
-        {this.icon()}
+        {this.icon_business()}
+        {this.icon_social()}
         <div>
           <div className="website-description">
             Justinsidechow.com written in
