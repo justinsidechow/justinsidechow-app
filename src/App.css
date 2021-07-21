@@ -7,7 +7,11 @@
 
 .content {
   flex: 1 0 auto;
-  background-color: ;
+  background: linear-gradient(
+    90deg,
+    rgb(56, 198, 244) 0%,
+    rgb(60, 50, 235) 70%
+  );
 }
 
 .App {
