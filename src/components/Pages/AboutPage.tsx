@@ -8,16 +8,15 @@ const AboutPage = () => {
           className="main-image"
           src={process.env.PUBLIC_URL + "/Photo/computer_background.JPG"}
         ></img>
-        <div className="page-title">About</div>
         <div className="page-mission">
+          <div className="page-title">About</div>
           Programming the future
           <br></br>
           One line at a time
-          <br></br>
-          <br></br>
-          <Link className="learn-more-button" to="/about">
-            Learn more here
-          </Link>
+          <div className="column-section">
+            <div className="column-left">1</div>
+            <div className="column-right">2</div>
+          </div>
         </div>
       </div>
       {/*

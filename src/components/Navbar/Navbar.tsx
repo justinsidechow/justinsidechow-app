@@ -60,9 +60,9 @@ class Navbar extends Component {
     if (this.state.mobileNavbarItemClicked) {
       this.setState({
         mobileNavBarMenuClicked: !this.state.mobileNavBarMenuClicked,
+        mobileNavbarItemClicked: false,
+        firstRender: false,
       });
-      this.state.mobileNavbarItemClicked = false;
-      this.state.firstRender = false;
       this.handleNavMenuTransition();
       return "nav-menu inactive";
     }

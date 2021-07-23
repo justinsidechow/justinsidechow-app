@@ -46,27 +46,84 @@
   transition: 0.25s;
 }
 
-.page-mission {
-  position: absolute;
-  left: 25%;
-  font-size: 4vw;
+.page-title {
+  width: 100%;
+  text-align: center;
+  font-size: 100px;
+  font-weight: bold;
+  margin-bottom: 50px;
 }
 
-.page-title {
+.page-mission {
   position: absolute;
-  left: 35%;
-  font-size: 8vw;
-  font-weight: bold;
+  width: 100%;
+  top: 50px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.column-section {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  margin-top: 75px;
+  gap: 50px;
+  grid-auto-flow: column;
+}
+
+.column-left {
+  float: center;
+  width: 100%;
+  margin: auto;
+  padding-left: 16rem;
+  padding-right: 16rem;
+  background-color: black;
+  justify-content: center;
+  transition: 0.5s;
+}
+.column-right {
+  float: center;
+  width: 100%;
+  margin: auto;
+  padding-left: 16rem;
+  padding-right: 16rem;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 1800px) {
+  .column-left {
+    padding-left: 13.5rem;
+    padding-right: 13.5rem;
+    transition: 0.5s;
+  }
+
+  .column-right {
+    padding-left: 13.5rem;
+    padding-right: 13.5rem;
+    transition: 0.5s;
+  }
 }
 
 @media screen and (max-width: 960px) {
   .page-mission {
-    position: absolute;
-    top: 20%;
-    left: 5%;
+    top: 25px;
+    font-size: 5vw;
   }
 
   .page-title {
+    font-size: 15vw;
+    margin-bottom: 25px;
   }
 
   .learn-more-button {
