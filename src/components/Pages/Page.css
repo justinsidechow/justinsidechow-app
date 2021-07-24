@@ -66,7 +66,6 @@
   display: grid;
   justify-content: center;
   align-content: center;
-
   margin-top: 75px;
   gap: 50px;
   grid-auto-flow: column;
@@ -76,22 +75,23 @@
   float: center;
   width: 100%;
   margin: auto;
-  padding-left: 16rem;
-  padding-right: 16rem;
-  background-color: black;
   justify-content: center;
-  transition: 0.5s;
+  transition: 0.25s;
 }
 .column-right {
   float: center;
   width: 100%;
   margin: auto;
-  padding-left: 16rem;
-  padding-right: 16rem;
+  padding-left: 18rem;
+  padding-right: 18rem;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 10px;
   justify-content: center;
-  transition: 0.5s;
+  transition: 0.25s;
+}
+
+.about-portrait {
+  width: 512px;
 }
 
 /* Clear floats after the columns */
@@ -103,15 +103,20 @@
 
 @media screen and (max-width: 1800px) {
   .column-left {
-    padding-left: 13.5rem;
-    padding-right: 13.5rem;
-    transition: 0.5s;
+    transition: 0.25s;
+  }
+
+  .about-portrait {
+    width: 28vw;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
   }
 
   .column-right {
-    padding-left: 13.5rem;
-    padding-right: 13.5rem;
-    transition: 0.5s;
+    padding-left: 16rem;
+    padding-right: 16rem;
+    transition: 0.25s;
   }
 }
 

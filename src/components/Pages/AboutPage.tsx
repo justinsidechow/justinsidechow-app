@@ -10,11 +10,16 @@ const AboutPage = () => {
         ></img>
         <div className="page-mission">
           <div className="page-title">About</div>
-          Programming the future
+          Just-in-side Chow
           <br></br>
-          One line at a time
+          The Joy in Discovery
           <div className="column-section">
-            <div className="column-left">1</div>
+            <div className="column-left">
+              <img
+                className="about-portrait"
+                src={process.env.PUBLIC_URL + "/Photo/justin-chow-portrait.jpg"}
+              ></img>
+            </div>
             <div className="column-right">2</div>
           </div>
         </div>
