@@ -1,13 +1,34 @@
+.container-home {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: auto;
+  padding: auto;
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
   position: relative;
   text-align: center;
   color: white;
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
+}
+
+.main-image-home {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .main-image {
-  max-width: 100%;
-  max-height: 100%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 40%;
 }
 
 .home-page-full-name {
@@ -82,9 +103,11 @@
   float: center;
   width: 100%;
   margin: auto;
-  padding-left: 18rem;
-  padding-right: 18rem;
-  background: rgba(255, 255, 255, 0.5);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  background: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   justify-content: center;
   transition: 0.25s;
@@ -92,6 +115,13 @@
 
 .about-portrait {
   width: 512px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.column-text {
+  font-size: 1.25rem;
 }
 
 /* Clear floats after the columns */
@@ -103,6 +133,7 @@
 
 @media screen and (max-width: 1800px) {
   .column-left {
+    margin: auto;
     transition: 0.25s;
   }
 
@@ -113,14 +144,29 @@
     border-radius: 50%;
   }
 
+  .column-left {
+    width: 90%;
+    padding-left: 2rem;
+    transition: 0.25s;
+  }
+
   .column-right {
-    padding-left: 16rem;
-    padding-right: 16rem;
+    width: 90%;
+    padding-left: 2rem;
+    padding-right: 2rem;
     transition: 0.25s;
   }
 }
 
 @media screen and (max-width: 960px) {
+  .container {
+    min-height: 1100px;
+  }
+
+  .main-image {
+    object-fit: cover;
+  }
+
   .page-mission {
     top: 25px;
     font-size: 5vw;
@@ -136,6 +182,36 @@
     border-radius: 5px;
     padding: 10px;
     margin: auto;
+  }
+
+  .column-section {
+    display: inline-block;
+    margin-top: 25px;
+  }
+
+  .about-portrait {
+    width: 70vw;
+    margin-bottom: 25px;
+  }
+
+  .column-left {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    transition: 0.25s;
+  }
+
+  .column-right {
+    width: 90vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    align-self: auto;
+  }
+
+  .column-text {
+    font-size: 1rem;
   }
 
   .spacer {

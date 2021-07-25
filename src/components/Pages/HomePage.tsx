@@ -4,9 +4,9 @@ import { Link, BrowserRouter as Router, Route } from "react-router-dom";
 const HomePage = () => {
   return (
     <div>
-      <div className="container">
+      <div className="container-home">
         <img
-          className="main-image"
+          className="main-image-home"
           src={process.env.PUBLIC_URL + "/Photo/place-holder-home-page.JPG"}
         ></img>
         <div className="home-page-mission">

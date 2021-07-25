@@ -20,7 +20,37 @@ const AboutPage = () => {
                 src={process.env.PUBLIC_URL + "/Photo/justin-chow-portrait.jpg"}
               ></img>
             </div>
-            <div className="column-right">2</div>
+            <div className="column-right">
+              <div className="column-text">
+                Hello World! My name is Justin Chow!
+                <br></br>
+                <br></br>
+                Hello World! My name is Justin Chow!
+                <br></br>
+                <br></br>
+                Hello World! My name is Justin Chow!
+                <br></br>
+                <br></br>
+                Hello World! My name is Justin Chow!
+                <br></br>
+                <br></br>
+                Hello World! My name is Justin Chow!
+                <br></br>
+                <br></br>
+                Hello World! My name is Justin Chow!
+                <br></br>
+                <br></br>
+                Hello World! My name is Justin Chow!
+                <br></br>
+                <br></br>
+                Hello World! My name is Justin Chow!
+                <br></br>
+                <br></br>
+                Hello World! My name is Justin Chow!
+                <br></br>
+                <br></br>
+              </div>
+            </div>
           </div>
         </div>
       </div>
