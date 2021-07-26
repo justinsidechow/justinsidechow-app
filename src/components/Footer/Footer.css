@@ -81,6 +81,7 @@
     rgb(60, 50, 235) 70%
   );
   padding: 20px;
+  flex-shrink: 0;
 }
 
 @media screen and (max-width: 960px) {
