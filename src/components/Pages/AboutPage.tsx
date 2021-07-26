@@ -39,7 +39,8 @@ const AboutPage = () => {
             would be my end goal. The Mausoleum Clothing is my own personal drop
             shipping clothing brand where I also express and test out my
             creative and business knowledge. Unit testing my knowledge to see if
-            what I learned is actually applicable to the real world.
+            what I learned is actually applicable to the real world. The future
+            looks promising and I am working toward that future.
             <br></br>
             <br></br>
             Thanks for reading about me and check out my creative projects

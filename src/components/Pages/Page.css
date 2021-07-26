@@ -66,6 +66,8 @@
 .main-image {
   height: 100%;
   width: 100%;
+  object-fit: cover;
+  object-position: 50% 40%;
   position: absolute;
   right: 0;
   top: 0;
@@ -76,6 +78,7 @@
   display: grid;
   justify-content: center;
   align-content: center;
+  margin-top: 50px;
 }
 
 .page-title {
@@ -108,7 +111,8 @@
   display: grid;
   justify-content: center;
   align-content: center;
-  margin-top: 75px;
+  margin-top: 50px;
+  margin-bottom: 25px;
   gap: 50px;
   grid-auto-flow: column;
 }
@@ -227,8 +231,11 @@
   }
 
   .column-section {
-    display: inline-block;
+    display: grid;
+    grid-auto-flow: row;
     margin-top: 25px;
+    margin-bottom: 0px;
+    grid-gap: 0px;
   }
 
   .column-link-4 {
