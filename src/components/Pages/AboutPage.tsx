@@ -20,7 +20,7 @@ const AboutPage = () => {
         </div>
         <div className="column-right">
           <div className="column-text">
-            Hello World! My name is Justin Man Hon Chow!
+            Hello World! My name is Justin Chow!
             <br></br>
             <br></br>I am a recent graduate from California State University of
             California (CSULA) of Fall 2020 with B.S in Computer Science and

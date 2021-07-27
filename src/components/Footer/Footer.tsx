@@ -86,7 +86,7 @@ class Footer extends Component {
           <div className="website-description">
             Typescript/React/NodeJS/HTML/CSS
           </div>
-          <div className="website-description">by Justin Man Hon Chow</div>
+          <div className="website-description">by Justin Chow</div>
         </div>
         <ul className="copyright">
           <li className="copyright-left-right">

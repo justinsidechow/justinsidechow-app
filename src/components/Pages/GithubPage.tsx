@@ -27,53 +27,48 @@ const GithubPage = () => {
             <br></br>
             Platform used: AWS (Lightsail/Route53), Visual Studio Code
             <br></br> <br></br>
-            Timeframe: May 2021 - July 2021
+            Timeframe: May 2021 - July 2021 <div className="red">FINISHED</div>
             <br></br> <br></br>
-            The joy in discovery, learning, and creating is my motivation to
-            wake up in the morning. Everyday is a day to strive toward the dream
-            of financial independence to earn the time to creating whatever
-            comes to my mind without restriction. Currently programming is my
-            main focus and the most scalable solution toward financial
-            independence and the expression of creativity. However, I do enjoy
-            playing video games and stream online in my off time to relax and
-            interact with other gamers. Video gaming is the biggest
-            entertainment industry and retiring while doing video game streaming
-            would be my end goal. The Mausoleum Clothing is my own personal drop
-            shipping clothing brand where I also express and test out my
-            creative and business knowledge. Unit testing my knowledge to see if
-            what I learned is applicable to the real world. The future looks
-            promising and I am working toward that future.
+            This website is the hub for all my projects where a visiter can
+            easily and quickly view while understanding the purpose and
+            inspirations of those creations. This project was also to showcase
+            my front/back-end software engineering skills by using the
+            programming languages posted above. Following best practices while
+            creating a portfolio website was fun and adventurous experience.
+            Learning the pros and cons of React showed me React is perfect for a
+            portfolio website as it is easy to develope and reacts to state
+            changes efficiently. Also, using Typescript and not Javascript is
+            safer for a first timer in website building as it dicourages type
+            errors. The Navbar logic was done in Typescript/React and the
+            website's responsiviness was handled by CSS. This website will be a
+            continous project as my other projects continue.
           </div>
         </div>
       </div>
       <div className="column-section">
         <div className="column-center">
           <div className="column-text">
-            Hello World! My name is Justin Man Hon Chow!
-            <br></br>
-            <br></br>I am a recent graduate from California State University of
-            California (CSULA) of Fall 2020 with B.S in Computer Science and
-            currently looking for a Software Engineer job.
+            Image-Scraper/NFT-ML
             <br></br>
             <br></br>
-            The joy in discovery, learning, and creating is my motivation to
-            wake up in the morning. Everyday is a day to strive toward the dream
-            of financial independence to earn the time to creating whatever
-            comes to my mind without restriction. Currently programming is my
-            main focus and the most scalable solution toward financial
-            independence and the expression of creativity. However, I do enjoy
-            playing video games and stream online in my off time to relax and
-            interact with other gamers. Video gaming is the biggest
-            entertainment industry and retiring while doing video game streaming
-            would be my end goal. The Mausoleum Clothing is my own personal drop
-            shipping clothing brand where I also express and test out my
-            creative and business knowledge. Unit testing my knowledge to see if
-            what I learned is applicable to the real world. The future looks
-            promising and I am working toward that future.
+            <div>
+              Repository: <div className="green">PUBLIC</div>
+            </div>
             <br></br>
+            Language used: Python
             <br></br>
-            Thanks for reading about me and check out my creative projects
-            below!
+            Platform used: Jupyter Notebook, Nvidia CUDA 11.0,
+            <br></br> <br></br>
+            Timeframe: April 2021 - May 2021, August 2021 -{" "}
+            <div className="green">NOW</div>
+            <br></br> <br></br>
+            Image-Scraper was created to scrape images from opensea.io to train
+            my NFT-ML through Pytorch DCGAN. After the training and end product
+            is made, it is sold to the NFT market. The product will also contain
+            the source code which train the network within the NFT package. This
+            project is still on going and at its infancy. There is still much to
+            be learn and done. Any advice to this project would be greatly
+            appreciated.
           </div>
         </div>
       </div>
@@ -96,33 +91,6 @@ const GithubPage = () => {
         className="main-image"
         src={process.env.PUBLIC_URL + "/Photo/computer_background.JPG"}
       ></img>
-    </div>
-  );
-  return (
-    <div>
-      <div className="container">
-        <img
-          className="main-image"
-          src={process.env.PUBLIC_URL + "/Photo/computer_background.JPG"}
-        ></img>
-        <div className="home-page-mission">
-          <div className="home-page-full-name">Justin Chow</div>
-          Programming the future
-          <br></br>
-          One line at a time
-          <br></br>
-          <br></br>
-          <Link className="learn-more-button" to="/about">
-            Learn more here
-          </Link>
-        </div>
-      </div>
-      {/*
-      <img
-        className="page-background-image"
-        src={process.env.PUBLIC_URL + "/Photo/computer_background.JPG"}
-      ></img>
-       */}
     </div>
   );
 };

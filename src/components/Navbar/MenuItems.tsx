@@ -7,7 +7,7 @@ const MenuItems = [
   {
     title: "Github",
     url: "/github",
-    pageName: "AboutPage",
+    pageName: "GithubPage",
   },
   /*{
     title: "Linkedin",
@@ -15,24 +15,24 @@ const MenuItems = [
     pageName: "AboutPage",
   },*/
   {
-    title: "Twitch.tv",
+    title: "Twitch",
     url: "/twitch",
-    pageName: "AboutPage",
+    pageName: "TwitchPage",
   },
   {
     title: "Youtube",
     url: "/youtube",
-    pageName: "AboutPage",
+    pageName: "YoutubePage",
   },
   {
     title: "Mausoleum",
     url: "/mausoleum",
-    pageName: "AboutPage",
+    pageName: "MausoleumPage",
   },
   {
     title: "Contact",
     url: "/contact",
-    pageName: "AboutPage",
+    pageName: "ContactPage",
   },
 ];
 

@@ -86,7 +86,6 @@
   text-align: center;
   font-size: 100px;
   font-weight: bold;
-  margin-bottom: 50px;
   z-index: 1;
   display: grid;
   grid-auto-flow: column;
@@ -104,11 +103,17 @@
   justify-content: center;
   display: grid;
   grid-auto-flow: column;
+  margin-bottom: 25px;
 }
 
 .red {
   display: inline;
   color: red;
+}
+
+.green {
+  display: inline;
+  color: lime;
 }
 
 .column-section {
@@ -285,7 +290,6 @@
 
   .page-title {
     font-size: 15vw;
-    margin-bottom: 25px;
     z-index: 1;
   }
 
