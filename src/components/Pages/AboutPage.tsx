@@ -5,11 +5,7 @@ const AboutPage = () => {
     <div className="container">
       <div className="page-heading">
         <div className="page-title">About</div>
-        <div className="page-mission">
-          Just-in-side Chow
-          <br></br>
-          The Joy in Discovery
-        </div>
+        <div className="page-mission">Just-in-side Chow</div>
       </div>
       <div className="column-section">
         <div className="column-left">
@@ -29,18 +25,20 @@ const AboutPage = () => {
             <br></br>
             The joy in discovery, learning, and creating is my motivation to
             wake up in the morning. Everyday is a day to strive toward the dream
-            of financial independence to earn the time to creating whatever
-            comes to my mind without restriction. Currently programming is my
+            of financial independence which affords the time to creating
+            whatever comes to my mind without restriction. Programming is my
             main focus and the most scalable solution toward financial
             independence and the expression of creativity. However, I do enjoy
             playing video games and stream online in my off time to relax and
             interact with other gamers. Video gaming is the biggest
-            entertainment industry and retiring while doing video game streaming
-            would be my end goal. The Mausoleum Clothing is my own personal drop
-            shipping clothing brand where I also express and test out my
-            creative and business knowledge. Unit testing my knowledge to see if
-            what I learned is applicable to the real world. The future looks
-            promising and I am working toward that future.
+            entertainment industry and retiring while video game streaming would
+            be my end goal. The memorable and creative ideas for funny videos
+            would then end up on Youtube to generate more traffic and
+            branding.The Mausoleum Clothing is my own personal drop shipping
+            clothing brand where I also express and test out my creative and
+            business knowledge. Unit testing my knowledge to see if what I
+            learned is applicable to the real world. The future looks promising
+            and I am working toward that future.
             <br></br>
             <br></br>
             Thanks for reading about me and check out my creative projects
@@ -69,8 +67,8 @@ const AboutPage = () => {
       ></img>
        */}
       <img
-        className="main-image"
-        src={process.env.PUBLIC_URL + "/Photo/computer_background.JPG"}
+        className="main-image-about"
+        src={process.env.PUBLIC_URL + "/Photo/about-background.JPG"}
       ></img>
     </div>
   );

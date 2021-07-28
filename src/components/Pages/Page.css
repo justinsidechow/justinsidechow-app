@@ -1,11 +1,13 @@
 .container-home {
-  position: relative;
-  text-align: center;
   color: white;
   margin: auto;
-  padding: auto;
-  display: contents;
+  height: auto;
   flex-direction: column;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+
+  display: contents;
 }
 
 .container {
@@ -22,15 +24,11 @@
   display: contents;
 }
 
-.main-image-home {
-  height: 100%;
-  width: 100%;
-}
-
 .home-page-full-name {
   font-size: 8vw;
   text-shadow: none;
   font-weight: bolder;
+  display: grid;
 }
 
 .home-page-mission {
@@ -38,6 +36,16 @@
   top: 10%;
   left: 5%;
   font-size: 4vw;
+  display: grid;
+}
+
+.empty-spacer {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  margin: auto;
+  padding: 5px;
+  justify-content: center;
 }
 
 .learn-more-button {
@@ -55,7 +63,7 @@
   text-decoration: none;
   padding: 15px;
   margin: auto;
-  display: inline-flex;
+  display: grid;
 }
 
 .learn-more-button:hover {
@@ -64,10 +72,32 @@
 }
 
 .main-image {
+  min-height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 40%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.main-image-home {
   height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: 50% 40%;
+  display: fixed;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.main-image-about {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 0%;
   position: absolute;
   right: 0;
   top: 0;
@@ -206,21 +236,17 @@
   align-content: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  width: 100%;
   gap: 50px;
   grid-auto-flow: column;
 }
 
 .column-center-twitch {
+  display: grid;
   float: center;
   width: 90%;
   margin: auto;
+  padding: auto;
   margin-bottom: 2rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
-  background: rgba(0, 0, 0, 0.85);
   border-radius: 10px;
   justify-content: center;
   transition: 0.25s;
@@ -278,7 +304,6 @@
   .main-image-home {
     object-fit: cover;
     object-position: 60% 0%;
-    position: absolute;
     right: 0;
     top: 0;
     z-index: 0;
@@ -310,7 +335,7 @@
 
 @media screen and (max-width: 960px) {
   .main-image {
-    object-fit: cover;
+    position: absolute;
   }
 
   .page-mission {

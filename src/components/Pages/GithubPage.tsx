@@ -89,7 +89,7 @@ const GithubPage = () => {
        */}
       <img
         className="main-image"
-        src={process.env.PUBLIC_URL + "/Photo/computer_background.JPG"}
+        src={process.env.PUBLIC_URL + "/Photo/computer-background.JPG"}
       ></img>
     </div>
   );
