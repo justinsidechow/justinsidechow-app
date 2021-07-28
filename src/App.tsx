@@ -12,6 +12,7 @@ import MausoleumPage from "./components/Pages/MausoleumPage";
 import ContactPage from "./components/Pages/ContactPage";
 import Footer from "./components/Footer/Footer";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import twitchPage from "./components/Pages/TwitchPage";
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
                 {LinkedinPage}
               </Route>
               <Route exact path="/twitch">
-                {TwitchPage}
+                <TwitchPage />
               </Route>
               <Route exact path="/youtube">
                 {YoutubePage}

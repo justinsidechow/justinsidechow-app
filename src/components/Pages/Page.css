@@ -200,6 +200,37 @@
   z-index: 1;
 }
 
+.column-section-twitch {
+  display: inline-grid;
+  justify-content: center;
+  align-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  gap: 50px;
+  grid-auto-flow: column;
+}
+
+.column-center-twitch {
+  float: center;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 10px;
+  justify-content: center;
+  transition: 0.25s;
+  z-index: 1;
+}
+
+.twitch-video {
+  justify-content: center;
+}
+
 .column-left {
   float: center;
   width: 50%;
