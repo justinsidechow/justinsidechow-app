@@ -257,6 +257,19 @@
   justify-content: center;
 }
 
+.video-responsive {
+  width: 70vw;
+  height: 70vh;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
 .column-left {
   float: center;
   width: 50%;
@@ -410,5 +423,10 @@
 
   .learn-more-button:hover {
     font-size: 2.75vw;
+  }
+
+  .video-responsive {
+    width: 90vw;
+    height: 60vh;
   }
 }

@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const YoutubePage = () => {
   return (
     <div className="container">
@@ -7,76 +9,58 @@ const YoutubePage = () => {
           A Moment Recorded, Experience Shared, Connected
         </div>
       </div>
-      <div className="column-section">
-        <div className="column-center">
-          <img
-            className="column-link-logo"
-            src={process.env.PUBLIC_URL + "/Logo/justinsidechow-logo.png"}
-          />
-          <div className="column-text">
-            Justinsidechow-app (This website!)
-            <br></br>
-            <br></br>
-            <div>
-              Repository: <div className="red">PRIVATE</div>
-            </div>
-            <br></br>
-            Language used: Typescript/React/NodeJS/HTML/CSS
-            <br></br>
-            Platform used: AWS (Lightsail/Route53), Visual Studio Code
-            <br></br> <br></br>
-            Timeframe: May 2021 - July 2021 <div className="red">FINISHED</div>
-            <br></br> <br></br>
-            This website is the hub for all my projects where a visiter can
-            easily and quickly view while understanding the purpose and
-            inspirations of those creations. This project was also to showcase
-            my front/back-end software engineering skills by using the
-            programming languages posted above. Following best practices while
-            creating a portfolio website was fun and adventurous experience.
-            Learning the pros and cons of React showed me React is perfect for a
-            portfolio website as it is easy to develope and reacts to state
-            changes efficiently. Also, using Typescript and not Javascript is
-            safer for a first timer in website building as it dicourages type
-            errors. The Navbar logic was done in Typescript/React and the
-            website's responsiviness was handled by CSS. This website will be a
-            continous project as my other projects continue.
+      <div className="column-section-twitch">
+        <div className="column-center-twitch">
+          <div>
+            <iframe
+              className="video-responsive"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/wLaSWxHa4P4"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       </div>
       <div className="column-section">
         <div className="column-center">
           <div className="column-text">
-            Image-Scraper/NFT-ML
+            In the business of connecting with the viewers, memoriable branding
+            and genuine interaction is king.
             <br></br>
             <br></br>
-            <div>
-              Repository: <div className="green">PUBLIC</div>
-            </div>
+            "Booty is love, Booty is life" may be a silly and childish slogan to
+            go by, however it rolls off the tongue nicely. These lines were
+            never meant to be serious as it showcases the mood for the channel,
+            which is a fun and relaxing place to watch video game content while
+            making silly jokes about booties. Therefore, viewers would not feel
+            intimidated to interact with me and hopefully engage in the chat. On
+            a more serious note, in the slogan is how it would be welcoming for
+            everyone no matter the racial or sexual differences as everyone have
+            a booty. There is more to just showcase video gaming in streaming as
+            making a connection and improving the mood of the viewer with the
+            content is top priority. Life can be drooling, harsh, and exhasting.
+            Sometimes, all we need a moment to relax and just enjoy some video
+            gaming with others.
             <br></br>
-            Language used: Python
             <br></br>
-            Platform used: Jupyter Notebook, Nvidia CUDA 11.0,
-            <br></br> <br></br>
-            Timeframe: April 2021 - May 2021, August 2021 -{" "}
-            <div className="green">NOW</div>
-            <br></br> <br></br>
-            Image-Scraper was created to scrape images from opensea.io to train
-            my NFT-ML through Pytorch DCGAN. After the training and end product
-            is made, it is sold to the NFT market. The product will also contain
-            the source code which train the network within the NFT package. This
-            project is still on going and at its infancy. There is still much to
-            be learn and done. Any advice to this project would be greatly
-            appreciated.
+            Chat with me above or check me out on twitch.tv below!
           </div>
         </div>
       </div>
       <div className="column-section">
-        <a className="column-link" href="https://github.com/justinsidechow">
+        <a
+          className="column-link"
+          href="https://https://www.youtube.com/channel/UCQ1fJzVpKueH3K3qRDIjgVg"
+        >
           <img
             className="column-link-logo"
-            src={process.env.PUBLIC_URL + "/Logo/github-icon.png"}
+            src={process.env.PUBLIC_URL + "/Logo/youtube-icon.png"}
           />
-          {"github.com/justinsidechow"}
+          {"youtube.com"}
         </a>
       </div>
       {/*
@@ -92,5 +76,11 @@ const YoutubePage = () => {
     </div>
   );
 };
+
+/*
+YoutubeEmbed.propTypes = {
+  embedId: PropTypes.string.isRequired
+};
+*/
 
 export default YoutubePage;
