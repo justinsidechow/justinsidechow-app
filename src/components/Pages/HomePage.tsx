@@ -7,7 +7,7 @@ const HomePage = () => {
       <div className="container">
         <img
           className="main-image-home"
-          src={process.env.PUBLIC_URL + "/Photo/place-holder-home-page.JPG"}
+          src={process.env.PUBLIC_URL + "/Photo/home-background.JPG"}
         ></img>
         <div className="home-page-mission">
           <div className="home-page-full-name">Justin Chow</div>

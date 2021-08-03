@@ -57,7 +57,7 @@ const GithubPage = () => {
             <br></br>
             Language used: Python
             <br></br>
-            Platform used: Jupyter Notebook, Nvidia CUDA 11.0,
+            Platform used: Jupyter Notebook, Nvidia CUDA 11.0
             <br></br> <br></br>
             Timeframe: April 2021 - May 2021, August 2021 -{" "}
             <div className="green">NOW</div>
@@ -89,7 +89,7 @@ const GithubPage = () => {
        */}
       <img
         className="main-image"
-        src={process.env.PUBLIC_URL + "/Photo/computer-background.JPG"}
+        src={process.env.PUBLIC_URL + "/Photo/github-background.JPG"}
       ></img>
     </div>
   );

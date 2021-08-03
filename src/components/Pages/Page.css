@@ -25,18 +25,20 @@
 }
 
 .home-page-full-name {
-  font-size: 8vw;
+  font-size: 9vw;
   text-shadow: none;
   font-weight: bolder;
   display: grid;
+  text-shadow: 3px 3px 5px black;
 }
 
 .home-page-mission {
   position: absolute;
   top: 10%;
   left: 5%;
-  font-size: 4vw;
+  font-size: 5vw;
   display: grid;
+  text-shadow: 3px 3px 5px black;
 }
 
 .empty-spacer {
@@ -258,8 +260,8 @@
 }
 
 .video-responsive {
-  width: 70vw;
-  height: 70vh;
+  width: 95vw;
+  height: 80vh;
 }
 
 .video-responsive iframe {
@@ -378,7 +380,6 @@
   }
 
   .column-link {
-    width: 50vw;
     font-size: 1.5rem;
   }
 
@@ -426,7 +427,6 @@
   }
 
   .video-responsive {
-    width: 90vw;
-    height: 60vh;
+    height: 30vh;
   }
 }

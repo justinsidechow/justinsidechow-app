@@ -28,26 +28,29 @@ const YoutubePage = () => {
       <div className="column-section">
         <div className="column-center">
           <div className="column-text">
-            In the business of connecting with the viewers, memoriable branding
-            and genuine interaction is king.
+            The scalability and distribution of digital content is the printing
+            press of our generation and beyond.
             <br></br>
             <br></br>
-            "Booty is love, Booty is life" may be a silly and childish slogan to
-            go by, however it rolls off the tongue nicely. These lines were
-            never meant to be serious as it showcases the mood for the channel,
-            which is a fun and relaxing place to watch video game content while
-            making silly jokes about booties. Therefore, viewers would not feel
-            intimidated to interact with me and hopefully engage in the chat. On
-            a more serious note, in the slogan is how it would be welcoming for
-            everyone no matter the racial or sexual differences as everyone have
-            a booty. There is more to just showcase video gaming in streaming as
-            making a connection and improving the mood of the viewer with the
-            content is top priority. Life can be drooling, harsh, and exhasting.
-            Sometimes, all we need a moment to relax and just enjoy some video
-            gaming with others.
+            It is one thing to create content and another to distribute it
+            effectively for the limitless future. The content created has value
+            it is seen live and maybe even more by those who were not able to
+            view it live. Youtube is the perfect platform to archive contents
+            that are attention grabbing enough for more traffic toward one's
+            digital platform brand. Any twitch content recorded worth making
+            into a video should be posted on youtube to maximize the value of
+            the content. The hardest problem is to generate enough content for
+            that one good minute of gameplay to post onto youtube. Second is the
+            creative direction which would grab hold onto Youtube's algorithm to
+            recommend to other's top recommend. Third is repeating those two
+            steps till the videos are integrated into viewer's general habit of
+            Youtube viewing. All in all, Youtube is another platform to further
+            my reach toward my dream. All of this is still a learning process so
+            more will change and improve in the future.
             <br></br>
             <br></br>
-            Chat with me above or check me out on twitch.tv below!
+            Check me out the first video I've ever made on gaming above or my
+            channel below!
           </div>
         </div>
       </div>
@@ -71,7 +74,7 @@ const YoutubePage = () => {
      */}
       <img
         className="main-image"
-        src={process.env.PUBLIC_URL + "/Photo/computer-background.JPG"}
+        src={process.env.PUBLIC_URL + "/Photo/youtube-background.JPG"}
       ></img>
     </div>
   );
