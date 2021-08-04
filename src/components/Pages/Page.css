@@ -383,11 +383,49 @@
   font-size: 1.25rem;
 }
 
+.column-center-contact {
+  float: center;
+  width: 80vw;
+  margin: auto;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 10px;
+  justify-content: center;
+  transition: 0.25s;
+  z-index: 1;
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
+}
+
+input {
+  justify-content: center;
+  margin: 0;
+  font-size: 1rem;
+  height: 2em;
+  width: 60vw;
+}
+textarea {
+  justify-content: center;
+  margin: 0;
+  font-size: 1rem;
+  height: 15em;
+  width: 60vw;
+}
+
+.column-contact {
+  justify-content: center;
+  margin: auto;
+  padding: auto;
+  width: 60vw;
 }
 
 @media screen and (max-width: 1800px) {
@@ -502,6 +540,15 @@
   }
 
   .column-center {
+    width: 90vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    align-self: auto;
+  }
+
+  .column-center-contact {
     width: 90vw;
     padding-top: 2vh;
     padding-bottom: 2vh;

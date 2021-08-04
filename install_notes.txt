@@ -5,3 +5,5 @@ yarn add twitch
 yarn add react-twitch-embed
 
 npm i --save-dev @types/react-twitch-embed
+
+npm install react-hook-form
