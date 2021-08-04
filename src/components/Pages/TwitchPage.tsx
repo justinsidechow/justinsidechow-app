@@ -22,8 +22,8 @@ class TwitchPage extends Component {
               channel="JBOOTY"
               id="twitch-embed"
               theme="dark"
-              width="95vw"
-              height="95vh"
+              width="90vw"
+              height="90vh"
               muted
               onVideoPause={() => console.log(":(")}
             />

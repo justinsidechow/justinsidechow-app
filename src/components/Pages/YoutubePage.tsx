@@ -57,7 +57,7 @@ const YoutubePage = () => {
       <div className="column-section">
         <a
           className="column-link"
-          href="https://https://www.youtube.com/channel/UCQ1fJzVpKueH3K3qRDIjgVg"
+          href="https://www.youtube.com/channel/UCQ1fJzVpKueH3K3qRDIjgVg"
         >
           <img
             className="column-link-logo"
