@@ -1,4 +1,13 @@
-const ContactPage = () => {
+import { useForm } from "react-hook-form";
+
+function ContactPage() {
+  {
+    /* 
+  require("react-dom");
+  window.React2 = require("react");
+  console.log(window.React1 === window.React2);
+  */
+  }
   return (
     <div className="container">
       <div className="page-heading">
@@ -7,12 +16,40 @@ const ContactPage = () => {
       </div>
       <div className="column-section">
         <div className="column-center-contact">
-          <form className="column-contact" id="contact-form">
-            <input type="text" name="user_name" placeholder="Name" />
-            <input type="email" name="user_email" placeholder="Email" />
-            <textarea name="message" placeholder="Message" />
-            <input type="submit" value="Send" />
+          <div className="column-text">
+            For any business inquires or questions, please use the form below.
+            It will send an email to my{" "}
+            <a
+              className="contact-email-link"
+              href="mailto:justinsidechow@gmail.com"
+            >
+              justinsidechow@gmail.com
+            </a>{" "}
+            and I will reply as soon as possible!
+          </div>
+          {/* 
+          <form
+            className="column-contact"
+            id="contact-form"
+            onSubmit={handleSubmit(onSubmit)}
+          >
+            <input
+              type="text"
+              placeholder="Name"
+              {...register("user_nam", { required: true })}
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              {...register("user_email", { required: true })}
+            />
+            <textarea
+              placeholder="Message"
+              {...register("message", { required: true })}
+            />
+            <input className="input-button" type="submit" value="Send" />
           </form>
+          */}
         </div>
       </div>
       <img
@@ -21,6 +58,6 @@ const ContactPage = () => {
       ></img>
     </div>
   );
-};
+}
 
 export default ContactPage;

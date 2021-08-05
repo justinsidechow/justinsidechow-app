@@ -406,19 +406,53 @@
   clear: both;
 }
 
+.contact-email-link {
+  color: white;
+}
+
 input {
   justify-content: center;
-  margin: 0;
+  margin: auto;
+  padding: auto;
+  border-radius: 5px;
   font-size: 1rem;
   height: 2em;
   width: 60vw;
 }
 textarea {
   justify-content: center;
-  margin: 0;
+  margin: auto;
+  margin-top: 1em;
+  padding: auto;
+  border-radius: 5px;
   font-size: 1rem;
   height: 15em;
   width: 60vw;
+}
+
+.input-button {
+  background: linear-gradient(
+    90deg,
+    rgb(56, 198, 244) 0%,
+    rgb(60, 50, 235) 70%
+  );
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  color: transparent;
+  text-shadow: 0px 0px 0px white;
+  text-decoration: none;
+  display: inline-table;
+  margin: auto;
+  justify-content: center;
+  transition: 0.25s;
+  z-index: 1;
+  width: 40vw;
+  margin-top: 20px;
+}
+
+.input-button:hover {
+  transform: scale(1.1, 1.1);
 }
 
 .column-contact {
