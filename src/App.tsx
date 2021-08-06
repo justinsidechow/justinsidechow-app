@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import NavBar from "./components/Navbar/Navbar";
-import MenuItems from "./components/Navbar/MenuItems";
 import HomePage from "./components/Pages/HomePage";
 import AboutPage from "./components/Pages/AboutPage";
 import GithubPage from "./components/Pages/GithubPage";
@@ -12,9 +11,16 @@ import MausoleumPage from "./components/Pages/MausoleumPage";
 import ContactPage from "./components/Pages/ContactPage";
 import Footer from "./components/Footer/Footer";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import twitchPage from "./components/Pages/TwitchPage";
+import { useForm } from "react-hook-form";
 
 function App() {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data: any) => console.log(data);
   return (
     <React.Fragment>
       <section className="App">

@@ -1,4 +1,10 @@
 import { useForm } from "react-hook-form";
+import register from "../../App";
+import handleSubmit from "../../App";
+import watch from "../../App";
+import errors from "../../App";
+import data from "../../App";
+import onSubmit from "../../App";
 
 function ContactPage() {
   {
@@ -27,8 +33,17 @@ function ContactPage() {
             </a>{" "}
             and I will reply as soon as possible!
           </div>
-          {/* 
           <form
+            className="column-contact"
+            id="contact-form"
+            onSubmit={handleSubmit(onSubmit)}
+          >
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <textarea placeholder="Message" />
+            <input className="input-button" type="submit" value="Send" />
+          </form>
+          {/*<form
             className="column-contact"
             id="contact-form"
             onSubmit={handleSubmit(onSubmit)}
@@ -36,7 +51,7 @@ function ContactPage() {
             <input
               type="text"
               placeholder="Name"
-              {...register("user_nam", { required: true })}
+              {...register("user_name", { required: true })}
             />
             <input
               type="email"
@@ -48,8 +63,7 @@ function ContactPage() {
               {...register("message", { required: true })}
             />
             <input className="input-button" type="submit" value="Send" />
-          </form>
-          */}
+          </form>*/}
         </div>
       </div>
       <img
