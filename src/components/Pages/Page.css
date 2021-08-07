@@ -410,6 +410,12 @@
   color: white;
 }
 
+div[role="alert"] {
+  color: red;
+  margin-top: 1em;
+  font-size: 0.5em;
+}
+
 input {
   justify-content: center;
   margin: auto;
@@ -418,12 +424,16 @@ input {
   font-size: 1rem;
   height: 2em;
   width: 60vw;
+  outline: none;
+  border-width: 0;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 textarea {
   justify-content: center;
   margin: auto;
   margin-top: 1em;
-  padding: auto;
+  padding: 5px;
   border-radius: 5px;
   font-size: 1rem;
   height: 15em;
@@ -447,8 +457,9 @@ textarea {
   justify-content: center;
   transition: 0.25s;
   z-index: 1;
-  width: 40vw;
+  width: 20vw;
   margin-top: 20px;
+  border-width: 0;
 }
 
 .input-button:hover {
@@ -504,6 +515,11 @@ textarea {
     top: 25px;
     font-size: 5vw;
     z-index: 1;
+    text-shadow: 2px 2px 3px black;
+  }
+
+  .home-page-mission {
+    text-shadow: 3px 3px 3px black;
   }
 
   .page-title {
@@ -601,5 +617,9 @@ textarea {
 
   .video-responsive {
     height: 30vh;
+  }
+
+  .input-button {
+    width: 30vw;
   }
 }

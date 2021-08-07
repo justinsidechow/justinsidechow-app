@@ -1,12 +1,7 @@
 import { useForm } from "react-hook-form";
-import register from "../../App";
-import handleSubmit from "../../App";
-import watch from "../../App";
-import errors from "../../App";
-import data from "../../App";
-import onSubmit from "../../App";
+import App from "../../App";
 
-function ContactPage() {
+const ContactPage = () => {
   {
     /* 
   require("react-dom");
@@ -14,6 +9,13 @@ function ContactPage() {
   console.log(window.React1 === window.React2);
   */
   }
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data: any) => console.log(data);
   return (
     <div className="container">
       <div className="page-heading">
@@ -38,9 +40,29 @@ function ContactPage() {
             id="contact-form"
             onSubmit={handleSubmit(onSubmit)}
           >
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
-            <textarea placeholder="Message" />
+            {errors.user_name && errors.user_name.type === "required" && (
+              <div role="alert">
+                Name is required
+                <br />
+              </div>
+            )}
+            <input
+              type="text"
+              placeholder="Name"
+              maxLength={Number("40")}
+              aria-invalid={errors.user_name ? "true" : "false"}
+              {...register("user_name", { required: true })}
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              maxLength={Number("40")}
+              {...register("user_email", { required: true })}
+            />
+            <textarea
+              placeholder="Message"
+              {...register("message", { required: true })}
+            />
             <input className="input-button" type="submit" value="Send" />
           </form>
           {/*<form
@@ -72,6 +94,6 @@ function ContactPage() {
       ></img>
     </div>
   );
-}
+};
 
 export default ContactPage;

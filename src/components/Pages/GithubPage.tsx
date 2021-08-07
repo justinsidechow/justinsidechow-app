@@ -23,7 +23,7 @@ const GithubPage = () => {
               Repository: <div className="red">PRIVATE</div>
             </div>
             <br></br>
-            Language used: Typescript/React/NodeJS/HTML/CSS
+            Language used: Typescript / React / NodeJS / HTML / CSS
             <br></br>
             Platform used: AWS (Lightsail/Route53), Visual Studio Code
             <br></br> <br></br>

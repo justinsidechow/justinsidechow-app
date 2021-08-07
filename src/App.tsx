@@ -11,16 +11,8 @@ import MausoleumPage from "./components/Pages/MausoleumPage";
 import ContactPage from "./components/Pages/ContactPage";
 import Footer from "./components/Footer/Footer";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { useForm } from "react-hook-form";
 
 function App() {
-  const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors },
-  } = useForm();
-  const onSubmit = (data: any) => console.log(data);
   return (
     <React.Fragment>
       <section className="App">
@@ -50,7 +42,7 @@ function App() {
                 {MausoleumPage}
               </Route>
               <Route exact path="/contact">
-                {ContactPage}
+                <ContactPage />
               </Route>
             </Switch>
           </div>
