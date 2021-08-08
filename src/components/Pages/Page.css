@@ -413,7 +413,7 @@
 div[role="alert"] {
   color: red;
   margin-top: 1em;
-  font-size: 0.5em;
+  font-size: 1rem;
 }
 
 input {
@@ -423,7 +423,7 @@ input {
   border-radius: 5px;
   font-size: 1rem;
   height: 2em;
-  width: 60vw;
+  width: 50vw;
   outline: none;
   border-width: 0;
   padding-left: 5px;
@@ -437,7 +437,7 @@ textarea {
   border-radius: 5px;
   font-size: 1rem;
   height: 15em;
-  width: 60vw;
+  width: 50vw;
 }
 
 .input-button {
@@ -458,12 +458,18 @@ textarea {
   transition: 0.25s;
   z-index: 1;
   width: 20vw;
-  margin-top: 20px;
   border-width: 0;
 }
 
 .input-button:hover {
   transform: scale(1.1, 1.1);
+}
+
+.message-chars-left {
+  font-size: 1rem;
+  width: 50vw;
+  margin: auto;
+  text-align: left;
 }
 
 .column-contact {
@@ -619,7 +625,20 @@ textarea {
     height: 30vh;
   }
 
+  input {
+    width: 60vw;
+  }
+  textarea {
+    width: 60vw;
+  }
+
+  .message-chars-left {
+    width: 60vw;
+  }
+
   .input-button {
+    font-size: 1.5rem;
     width: 30vw;
+    margin: 5px;
   }
 }

@@ -16,6 +16,8 @@ const ContactPage = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = (data: any) => console.log(data);
+  const message = watch("message") || "";
+  const messageCharsLeft = 1500 - message.length;
   return (
     <div className="container">
       <div className="page-heading">
@@ -53,16 +55,29 @@ const ContactPage = () => {
               aria-invalid={errors.user_name ? "true" : "false"}
               {...register("user_name", { required: true })}
             />
+            {errors.user_email && errors.user_email.type === "required" && (
+              <div role="alert">
+                Email is required
+                <br />
+              </div>
+            )}
             <input
               type="email"
               placeholder="Email"
               maxLength={Number("40")}
               {...register("user_email", { required: true })}
             />
+            {errors.message && errors.message.type === "required" && (
+              <div role="alert">
+                Message is required
+                <br />
+              </div>
+            )}
             <textarea
               placeholder="Message"
               {...register("message", { required: true })}
             />
+            <p className="message-chars-left">{messageCharsLeft}</p>
             <input className="input-button" type="submit" value="Send" />
           </form>
           {/*<form
