@@ -480,7 +480,7 @@ textarea {
   width: 60vw;
 }
 
-.status-message {
+.statusMessageClass {
   opacity: 0;
 }
 .success {

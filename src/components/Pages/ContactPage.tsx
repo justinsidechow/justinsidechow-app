@@ -13,7 +13,8 @@ const ContactPage = () => {
   } = useForm();
   const message = watch("message") || "";
   const messageCharsLeft = 1500 - message.length;
-  const [statusMessage, setStatusMessage] = useState("Message");
+  let [statusMessage,  setStatusMessage] = useState("Message");
+  let statusMessageClass = "statusMessageClass"
 
   const generateContactNumber = () => {
     const numStr = "000000" + (Math.random() * 1000000 | 0);
@@ -30,16 +31,16 @@ const ContactPage = () => {
       .then(function(response) {
        // ...
       setStatusMessage("Message sent!");
-      statusMessage.className = "status-message success";
+      statusMessageClass = "statusMessageClass success";
       setTimeout(()=> {
-        statusMessage.className = 'status-message'
+        statusMessageClass = 'statusMessageClass'
       }, 5000)
     }, function(error) {
       // ...
       setStatusMessage("Failed to send message! Please try again later.");
-      statusMessage.className = "status-message failure";
+      statusMessageClass = "statusMessageClass failure";
       setTimeout(()=> {
-        statusMessage.className = 'status-message'
+        statusMessageClass = 'statusMessageClass'
       }, 5000)
       });
   }
@@ -105,7 +106,7 @@ const ContactPage = () => {
             />
             <p className="message-chars-left">{messageCharsLeft}</p>
             <input type='hidden' name='contact_number' value={contactNumber} />
-            <p className='status-message'>{statusMessage}</p>
+            <p className={statusMessageClass}>{statusMessage}</p>
             <input className="input-button" type="submit" value="Send" />
           </form>
           {/*<form
