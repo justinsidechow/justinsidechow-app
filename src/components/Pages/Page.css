@@ -463,6 +463,7 @@ textarea {
 
 .input-button:hover {
   transform: scale(1.1, 1.1);
+  cursor: pointer;
 }
 
 .message-chars-left {
@@ -477,6 +478,18 @@ textarea {
   margin: auto;
   padding: auto;
   width: 60vw;
+}
+
+.status-message {
+  opacity: 0;
+}
+.success {
+  opacity: 1;
+  color: green;
+}
+.failure {
+  opacity: 1;
+  color: red;
 }
 
 @media screen and (max-width: 1800px) {

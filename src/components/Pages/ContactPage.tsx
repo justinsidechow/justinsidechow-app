@@ -1,23 +1,49 @@
+import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
-import App from "../../App";
+import { init, sendForm } from 'emailjs-com';
+init('user_gV0nrWNtqF1MApJds7mzr');
 
 const ContactPage = () => {
-  {
-    /* 
-  require("react-dom");
-  window.React2 = require("react");
-  console.log(window.React1 === window.React2);
-  */
-  }
+  const [contactNumber, setContactNumber] = useState("000000");
   const {
     register,
     handleSubmit,
     watch,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data: any) => console.log(data);
   const message = watch("message") || "";
   const messageCharsLeft = 1500 - message.length;
+  const [statusMessage, setStatusMessage] = useState("Message");
+
+  const generateContactNumber = () => {
+    const numStr = "000000" + (Math.random() * 1000000 | 0);
+    setContactNumber(numStr.substring(numStr.length - 6));
+  }
+
+  const onSubmit = (data: any) => {
+    // console.log(data);
+    const form = document.querySelector('#contact-form');
+
+    generateContactNumber();
+    
+    sendForm('default_service', 'template_qnrvlgi', '#contact-form')
+      .then(function(response) {
+       // ...
+      setStatusMessage("Message sent!");
+      statusMessage.className = "status-message success";
+      setTimeout(()=> {
+        statusMessage.className = 'status-message'
+      }, 5000)
+    }, function(error) {
+      // ...
+      setStatusMessage("Failed to send message! Please try again later.");
+      statusMessage.className = "status-message failure";
+      setTimeout(()=> {
+        statusMessage.className = 'status-message'
+      }, 5000)
+      });
+  }
+
   return (
     <div className="container">
       <div className="page-heading">
@@ -78,6 +104,8 @@ const ContactPage = () => {
               {...register("message", { required: true })}
             />
             <p className="message-chars-left">{messageCharsLeft}</p>
+            <input type='hidden' name='contact_number' value={contactNumber} />
+            <p className='status-message'>{statusMessage}</p>
             <input className="input-button" type="submit" value="Send" />
           </form>
           {/*<form
