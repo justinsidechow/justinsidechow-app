@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import { init, sendForm } from 'emailjs-com';
-init('user_gV0nrWNtqF1MApJds7mzr');
+import { init, sendForm } from "emailjs-com";
+init("user_gV0nrWNtqF1MApJds7mzr");
 
 const ContactPage = () => {
   const [contactNumber, setContactNumber] = useState("000000");
@@ -13,37 +13,40 @@ const ContactPage = () => {
   } = useForm();
   const message = watch("message") || "";
   const messageCharsLeft = 1500 - message.length;
-  let [statusMessage,  setStatusMessage] = useState("Message");
-  let statusMessageClass = "statusMessageClass"
+  const [statusMessage, setStatusMessage] = useState("Message");
+  const [statusMessageClass, setStatusMessageClass] =
+    useState("statusMessageClass");
 
   const generateContactNumber = () => {
-    const numStr = "000000" + (Math.random() * 1000000 | 0);
+    const numStr = "000000" + ((Math.random() * 1000000) | 0);
     setContactNumber(numStr.substring(numStr.length - 6));
-  }
+  };
 
   const onSubmit = (data: any) => {
     // console.log(data);
-    const form = document.querySelector('#contact-form');
+    const form = document.querySelector("#contact-form");
 
     generateContactNumber();
-    
-    sendForm('default_service', 'template_qnrvlgi', '#contact-form')
-      .then(function(response) {
-       // ...
-      setStatusMessage("Message sent!");
-      statusMessageClass = "statusMessageClass success";
-      setTimeout(()=> {
-        statusMessageClass = 'statusMessageClass'
-      }, 5000)
-    }, function(error) {
-      // ...
-      setStatusMessage("Failed to send message! Please try again later.");
-      statusMessageClass = "statusMessageClass failure";
-      setTimeout(()=> {
-        statusMessageClass = 'statusMessageClass'
-      }, 5000)
-      });
-  }
+
+    sendForm("default_service", "template_qnrvlgi", "#contact-form").then(
+      function (response) {
+        // ...
+        setStatusMessage("Message sent!");
+        setStatusMessageClass("statusMessageClass success");
+        setTimeout(() => {
+          setStatusMessageClass("statusMessageClass");
+        }, 5000);
+      },
+      function (error) {
+        // ...
+        setStatusMessage("Failed to send message! Please try again later.");
+        setStatusMessageClass("statusMessageClass failure");
+        setTimeout(() => {
+          setStatusMessageClass("statusMessageClass");
+        }, 5000);
+      }
+    );
+  };
 
   return (
     <div className="container">
@@ -94,6 +97,19 @@ const ContactPage = () => {
               maxLength={Number("40")}
               {...register("user_email", { required: true })}
             />
+            {errors.subject && errors.subject.type === "required" && (
+              <div role="alert">
+                Subject is required
+                <br />
+              </div>
+            )}
+            <input
+              type="text"
+              placeholder="Subject"
+              maxLength={Number("100")}
+              aria-invalid={errors.user_name ? "true" : "false"}
+              {...register("subject", { required: true })}
+            />
             {errors.message && errors.message.type === "required" && (
               <div role="alert">
                 Message is required
@@ -105,7 +121,7 @@ const ContactPage = () => {
               {...register("message", { required: true })}
             />
             <p className="message-chars-left">{messageCharsLeft}</p>
-            <input type='hidden' name='contact_number' value={contactNumber} />
+            <input type="hidden" name="contact_number" value={contactNumber} />
             <p className={statusMessageClass}>{statusMessage}</p>
             <input className="input-button" type="submit" value="Send" />
           </form>

@@ -486,10 +486,14 @@ textarea {
 .success {
   opacity: 1;
   color: green;
+  font-size: 2rem;
+  margin: 1rem;
 }
 .failure {
   opacity: 1;
   color: red;
+  font-size: 2rem;
+  margin: 1rem;
 }
 
 @media screen and (max-width: 1800px) {

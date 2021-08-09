@@ -48,10 +48,12 @@ const MausoleumPage = () => {
             storybrand framework. A dropshipping brand where the risk of failure
             would not cost a lot but the lessons learned in business and
             marketing would be invaluable for the future. This brand is the
-            guide for people's inability to express their emotions truthfully.
-            The purpose of the story is the first step for them to recognize
-            their emotions through the power of story telling. Maybe then, they
-            will genuinelly improve their lives by solving unrealized and
+            guide for people's inability to express their emotions truthfully
+            due to societal influences. The purpose of the story is the first
+            step for them to recognize their emotions through the power of story
+            telling. By understanding their own emotions can one start the
+            journey to express and learn from it. Maybe then, they will
+            genuinelly improve their lives by solving those unrealized and
             unsolved emotions. The first step will always be the hardest and it
             never hurts to have a little push from each other.
             <br></br>

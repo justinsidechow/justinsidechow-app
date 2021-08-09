@@ -34,19 +34,19 @@ const YoutubePage = () => {
             <br></br>
             It is one thing to create content and another to distribute it
             effectively for the limitless future. The content created has value
-            it is seen live and maybe even more by those who were not able to
-            view it live. Youtube is the perfect platform to archive contents
+            to those who saw it live and maybe even more so by those who were
+            not able to. Youtube is the perfect platform to archive contents
             that are attention grabbing enough for more traffic toward one's
-            digital platform brand. Any twitch content recorded worth making
-            into a video should be posted on youtube to maximize the value of
-            the content. The hardest problem is to generate enough content for
-            that one good minute of gameplay to post onto youtube. Second is the
-            creative direction which would grab hold onto Youtube's algorithm to
-            recommend to other's top recommend. Third is repeating those two
-            steps till the videos are integrated into viewer's general habit of
-            Youtube viewing. All in all, Youtube is another platform to further
-            my reach toward my dream. All of this is still a learning process so
-            more will change and improve in the future.
+            digital brand. Any twitch content recorded worth making into a video
+            should be posted on youtube to maximize the value of the content.
+            The hardest problem is to generate enough content for that one good
+            minute of gameplay to post onto youtube. Second is the creative
+            direction which grabs hold onto Youtube's algorithm to recommend to
+            other's top recommend. Third is repeating those two steps till the
+            videos are integrated into viewer's general habit of Youtube
+            viewing. All in all, Youtube is another platform to further my goal
+            toward my financial independence. All of this is still a learning
+            process so more will change and improve in the future.
             <br></br>
             <br></br>
             Check me out the first video I've ever made on gaming above or my

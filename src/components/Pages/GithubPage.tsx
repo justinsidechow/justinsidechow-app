@@ -16,32 +16,34 @@ const GithubPage = () => {
             src={process.env.PUBLIC_URL + "/Logo/justinsidechow-logo.png"}
           />
           <div className="column-text">
-            Justinsidechow-app (This website!)
+            JustinsideChow (This website!)
             <br></br>
             <br></br>
             <div>
-              Repository: <div className="red">PRIVATE</div>
+              <b>Repository:</b> <div className="red">PRIVATE</div>
             </div>
             <br></br>
-            Language used: Typescript / React / NodeJS / HTML / CSS
+            <b>Languages used:</b> Typescript / React / NodeJS / HTML / CSS
             <br></br>
-            Platform used: AWS (Lightsail/Route53), Visual Studio Code
+            <b>Platforms used:</b> AWS (Lightsail/Route53), Visual Studio Code
             <br></br> <br></br>
-            Timeframe: May 2021 - July 2021 <div className="red">FINISHED</div>
+            <b>Timeframe:</b> May 2021 - July 2021{" "}
+            <div className="red">FINISHED</div>
             <br></br> <br></br>
-            This website is the hub for all my projects where a visiter can
-            easily and quickly view while understanding the purpose and
-            inspirations of those creations. This project was also to showcase
-            my front/back-end software engineering skills by using the
-            programming languages posted above. Following best practices while
-            creating a portfolio website was fun and adventurous experience.
-            Learning the pros and cons of React showed me React is perfect for a
-            portfolio website as it is easy to develope and reacts to state
-            changes efficiently. Also, using Typescript and not Javascript is
-            safer for a first timer in website building as it dicourages type
-            errors. The Navbar logic was done in Typescript/React and the
-            website's responsiviness was handled by CSS. This website will be a
-            continous project as my other projects continue.
+            This website is the hub for all my projects where visiters can
+            easily understand the purpose and inspirations of those creations.
+            This project was also to showcase my front/back-end software
+            engineering skills by using the programming languages posted above.
+            Following best practices while creating a portfolio website was a
+            fun and adventurous experience as everything was written from
+            scratch. Learning the pros and cons of React showed me React is
+            perfect for a portfolio website with its asynchronous UI states.
+            Also, using Typescript and not Javascript is safer for a first timer
+            in website building as it dicourages type errors where it would
+            cause problems in the future. The Navbar logic was done in
+            Typescript/React and the website's responsiviness was handled by
+            CSS. This website will be a continous project as my projects
+            increase and old projects get updated.
           </div>
         </div>
       </div>
@@ -52,23 +54,23 @@ const GithubPage = () => {
             <br></br>
             <br></br>
             <div>
-              Repository: <div className="green">PUBLIC</div>
+              <b>Repository:</b> <div className="green">PUBLIC</div>
             </div>
             <br></br>
-            Language used: Python
+            <b>Languages used:</b> Python
             <br></br>
-            Platform used: Jupyter Notebook, Nvidia CUDA 11.0
+            <b>Platforms used:</b> Jupyter Notebook
             <br></br> <br></br>
-            Timeframe: April 2021 - May 2021, August 2021 -{" "}
+            <b>Timeframe:</b> April 2021 - May 2021, August 2021 -{" "}
             <div className="green">NOW</div>
             <br></br> <br></br>
             Image-Scraper was created to scrape images from opensea.io to train
-            my NFT-ML through Pytorch DCGAN. After the training and end product
-            is made, it is sold to the NFT market. The product will also contain
-            the source code which train the network within the NFT package. This
-            project is still on going and at its infancy. There is still much to
-            be learn and done. Any advice to this project would be greatly
-            appreciated.
+            my NFT-ML program through Pytorch DCGAN. After the training and end
+            product is made, it is then sold to the NFT market. The product will
+            also contain the source code which train the network within the NFT
+            package. This project is still on going and at its infancy. There is
+            still much to be learn and done. Any advice to this project would be
+            greatly appreciated.
           </div>
         </div>
       </div>

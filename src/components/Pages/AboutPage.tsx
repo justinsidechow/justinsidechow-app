@@ -24,21 +24,21 @@ const AboutPage = () => {
             <br></br>
             <br></br>
             The joy in discovery, learning, and creating is my motivation to
-            wake up in the morning. Everyday is a day to strive toward the dream
-            of financial independence which affords the time to creating
-            whatever comes to my mind without restriction. Programming is my
-            main focus and the most scalable solution toward financial
-            independence and the expression of creativity. However, I do enjoy
-            playing video games and stream online in my off time to relax and
-            interact with other gamers. Video gaming is the biggest
-            entertainment industry and retiring while video game streaming would
-            be my end goal. The memorable and creative ideas for funny videos
-            would then end up on Youtube to generate more traffic and
-            branding.The Mausoleum Clothing is my own personal drop shipping
-            clothing brand where I also express and test out my creative and
-            business knowledge. Unit testing my knowledge to see if what I
-            learned is applicable to the real world. The future looks promising
-            and I am working toward that future.
+            wake up in the morning. Everyday to strive toward the dream of
+            financial independence which provides the time to creating whatever
+            comes to my mind without restriction. Programming is my main focus
+            and the most scalable solution toward financial independence and the
+            expression of my creativity. However, I do enjoy playing video games
+            and stream online in my off time to relax and interact with other
+            gamers. Video gaming is the biggest entertainment industry which
+            allow streaming to becoming a more viable career as the value of the
+            industry continue to grow. The content created from streaming then
+            turn into entertaining videos for Youtube to generate more traffic
+            and branding.The Mausoleum Clothing is my own personal drop shipping
+            clothing brand where I express and test out my creative and business
+            knowledge. Unit testing my knowledge to see if what I learned is
+            applicable to the real world. There is no real progress without
+            trying, applying, and learning.
             <br></br>
             <br></br>
             Thanks for reading about me and check out my creative projects

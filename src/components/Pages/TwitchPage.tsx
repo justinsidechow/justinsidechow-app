@@ -42,13 +42,14 @@ class TwitchPage extends Component {
               channel, which is a fun and relaxing place to watch video game
               content while making silly jokes about booties. Therefore, viewers
               would not feel intimidated to interact with me and hopefully
-              engage in the chat. On a more serious note, in the slogan is how
-              it would be welcoming for everyone no matter the racial or sexual
-              differences as everyone have a booty. There is more to just
-              showcase video gaming in streaming as making a connection and
-              improving the mood of the viewer with the content is top priority.
-              Life can be drooling, harsh, and exhasting. Sometimes, all we need
-              a moment to relax and just enjoy some video gaming with others.
+              engage in the chat. On a more serious note, the slogan welcomes
+              everyone no matter the differences we share as everyone has a
+              booty and love is universal in all booties. There is more to
+              showcasing video gaming in streaming as making a connection and
+              improving the mood of the viewer with the gaming content is top
+              priority. Life can be drooling, harsh, and exhasting. Sometimes,
+              all we need a moment to relax and just enjoy some video gaming
+              with others.
               <br></br>
               <br></br>
               Chat with me above or check me out on twitch.tv below!
