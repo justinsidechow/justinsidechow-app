@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "JustinsideChow",
+  "name": "JustinsideChow-app",
   "icons": [
     {
       "src": "Logo/justinsidechow-logo.png",
@@ -21,5 +21,6 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "background": "linear-gradient(90deg, rgb(56, 198, 244) 0%, rgb(60, 50, 235) 70%);"
 }
