@@ -12,6 +12,7 @@ const MausoleumPage = () => {
         >
           <img
             className="column-3"
+            alt="hugs-shirt"
             src={process.env.PUBLIC_URL + "/Photo/hugs-shirt.jpg"}
           ></img>
         </a>
@@ -21,6 +22,7 @@ const MausoleumPage = () => {
         >
           <img
             className="column-3"
+            alt="cherry-shirt"
             src={process.env.PUBLIC_URL + "/Photo/cherry-shirt.jpg"}
           ></img>
         </a>
@@ -30,6 +32,7 @@ const MausoleumPage = () => {
         >
           <img
             className="column-3"
+            alt="eye-shirt"
             src={process.env.PUBLIC_URL + "/Photo/EYE-shirt.jpg"}
           ></img>
         </a>
@@ -67,20 +70,16 @@ const MausoleumPage = () => {
         <a className="column-link" href="https://mausoleumclothing.com/">
           <img
             className="column-link-logo"
+            alt="clothing-logo"
             src={process.env.PUBLIC_URL + "/Logo/clothing-icon.png"}
           />
           {"mausoleumclothing.com"}
         </a>
       </div>
-      {/*
-    <img
-      className="page-background-image"
-      src={process.env.PUBLIC_URL + "/Photo/computer_background.JPG"}
-    ></img>
-     */}
       <img
         className="main-image-mausoleum"
-        src={process.env.PUBLIC_URL + "/Photo/mausoleum-background.JPG"}
+        alt="mausoleum-background"
+        src={process.env.PUBLIC_URL + "/Photo/mausoleum-background.jpg"}
       ></img>
     </div>
   );

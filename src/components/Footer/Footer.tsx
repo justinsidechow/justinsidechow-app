@@ -17,6 +17,7 @@ class Footer extends Component {
         <a href="https://github.com/justinsidechow">
           <img
             className="social-icon"
+            alt="github"
             src={process.env.PUBLIC_URL + "/Logo/github-icon.png"}
           />
         </a>
@@ -30,18 +31,21 @@ class Footer extends Component {
         <a href="https://twitch.tv/jbooty">
           <img
             className="social-icon"
+            alt="twitch"
             src={process.env.PUBLIC_URL + "/Logo/twitch-icon.png"}
           />
         </a>
         <a href="https://www.youtube.com/channel/UCQ1fJzVpKueH3K3qRDIjgVg">
           <img
             className="social-icon"
+            alt="youtube"
             src={process.env.PUBLIC_URL + "/Logo/youtube-icon.png"}
           />
         </a>
         <a href="https://mausoleumclothing.com">
           <img
             className="social-icon"
+            alt="mausoleum"
             src={process.env.PUBLIC_URL + "/Logo/clothing-icon.png"}
           />
         </a>
@@ -55,18 +59,21 @@ class Footer extends Component {
         <a href="https://twitter.com/justinsidechow">
           <img
             className="social-icon"
+            alt="twitch"
             src={process.env.PUBLIC_URL + "/Logo/twitter-icon.png"}
           />
         </a>
         <a href="https://www.instagram.com/justinsidechow/">
           <img
             className="social-icon"
+            alt="instagram"
             src={process.env.PUBLIC_URL + "/Logo/instagram-icon.png"}
           />
         </a>
         <a href="mailto:justinsidechow@gmail.com">
           <img
             className="social-icon"
+            alt="email"
             src={process.env.PUBLIC_URL + "/Logo/email-icon.png"}
           />
         </a>

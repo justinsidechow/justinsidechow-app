@@ -1,5 +1,5 @@
 import "./Page.css";
-import { Link, BrowserRouter as Router, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -7,7 +7,8 @@ const HomePage = () => {
       <div className="container">
         <img
           className="main-image-home"
-          src={process.env.PUBLIC_URL + "/Photo/home-background.JPG"}
+          alt="home-background"
+          src={process.env.PUBLIC_URL + "/Photo/home-background.jpg"}
         ></img>
         <div className="home-page-mission">
           <div className="home-page-full-name">Justin Chow</div>
@@ -21,12 +22,6 @@ const HomePage = () => {
           </Link>
         </div>
       </div>
-      {/*
-      <img
-        className="page-background-image"
-        src={process.env.PUBLIC_URL + "/Photo/computer_background.JPG"}
-      ></img>
-       */}
     </div>
   );
 };

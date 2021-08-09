@@ -1,5 +1,3 @@
-import { Link, BrowserRouter as Router, Route } from "react-router-dom";
-
 const GithubPage = () => {
   return (
     <div className="container">
@@ -13,6 +11,7 @@ const GithubPage = () => {
         <div className="column-center">
           <img
             className="column-link-logo"
+            alt="justinsidechow-logo"
             src={process.env.PUBLIC_URL + "/Logo/justinsidechow-logo.png"}
           />
           <div className="column-text">
@@ -78,20 +77,16 @@ const GithubPage = () => {
         <a className="column-link" href="https://github.com/justinsidechow">
           <img
             className="column-link-logo"
+            alt="github-icon"
             src={process.env.PUBLIC_URL + "/Logo/github-icon.png"}
           />
           {"github.com/justinsidechow"}
         </a>
       </div>
-      {/*
-      <img
-        className="page-background-image"
-        src={process.env.PUBLIC_URL + "/Photo/computer_background.JPG"}
-      ></img>
-       */}
       <img
         className="main-image"
-        src={process.env.PUBLIC_URL + "/Photo/github-background.JPG"}
+        alt="github-background"
+        src={process.env.PUBLIC_URL + "/Photo/github-background.jpg"}
       ></img>
     </div>
   );

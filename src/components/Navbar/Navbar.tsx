@@ -1,38 +1,43 @@
-import * as React from "react";
 import { Component } from "react";
 import MenuItems from "./MenuItems";
 import "./Navbar.css";
-import { Link, BrowserRouter as Router, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class Navbar extends Component {
   state = {
     mobileNavBarMenuClicked: false,
     mobileNavbarItemClicked: false,
-    firstRender: false,
+    firstRender: true,
     width: 0,
     height: 0,
   };
 
   updateDimensions = () => {
     this.setState({ width: window.innerWidth, height: window.innerHeight });
+    if (this.state.width >= 960) {
+      this.setState({ firstRender: true, mobileNavBarMenuClicked: false });
+    }
   };
 
   handleClickNavMenu = () => {
     this.setState({
       mobileNavBarMenuClicked: !this.state.mobileNavBarMenuClicked,
+      firstRender: false,
     });
   };
 
   handleClickNavBar = () => {
     this.setState({
-      mobileNavbarItemClicked: !this.state.mobileNavbarItemClicked,
+      mobileNavbarItemClicked: true,
+      mobileNavBarMenuClicked: false,
     });
   };
 
   handleClickNavSiteName = () => {
-    if (this.state.mobileNavBarMenuClicked) {
-      this.setState({ mobileNavbarItemClicked: true });
-    }
+    this.setState({
+      mobileNavbarItemClicked: true,
+      mobileNavBarMenuClicked: false,
+    });
   };
 
   componentDidMount() {
@@ -51,30 +56,23 @@ class Navbar extends Component {
   }
 
   navMenuInitiation() {
-    if (this.state.width >= 960) {
-      this.state.mobileNavBarMenuClicked = false;
-      this.state.firstRender = false;
-      return "nav-menu firstactive";
-    }
+    let render = "nav-menu firstactive";
 
-    if (this.state.mobileNavbarItemClicked) {
-      this.setState({
-        mobileNavBarMenuClicked: !this.state.mobileNavBarMenuClicked,
-        mobileNavbarItemClicked: false,
-        firstRender: false,
-      });
-      this.handleNavMenuTransition();
-      return "nav-menu inactive";
+    if (this.state.width >= 960) {
+      render = "nav-menu firstactive";
     }
 
     if (this.state.mobileNavBarMenuClicked) {
-      this.state.firstRender = true;
-      return "nav-menu active";
-    } else if (!this.state.mobileNavBarMenuClicked && this.state.firstRender) {
-      return "nav-menu inactive";
-    } else {
-      return "nav-menu firstactive";
+      render = "nav-menu active";
+    } else if (
+      !this.state.mobileNavBarMenuClicked &&
+      !this.state.firstRender &&
+      !this.state.mobileNavbarItemClicked
+    ) {
+      render = "nav-menu inactive";
     }
+
+    return render;
   }
 
   render() {

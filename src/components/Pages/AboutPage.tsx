@@ -1,4 +1,4 @@
-import { Link, BrowserRouter as Router, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const AboutPage = () => {
   return (
@@ -11,6 +11,7 @@ const AboutPage = () => {
         <div className="column-left">
           <img
             className="about-portrait"
+            alt="about-portrait"
             src={process.env.PUBLIC_URL + "/Photo/justin-chow-portrait.jpg"}
           ></img>
         </div>
@@ -60,15 +61,10 @@ const AboutPage = () => {
           Mausoleum
         </Link>
       </div>
-      {/*
-      <img
-        className="page-background-image"
-        src={process.env.PUBLIC_URL + "/Photo/computer_background.JPG"}
-      ></img>
-       */}
       <img
         className="main-image-about"
-        src={process.env.PUBLIC_URL + "/Photo/about-background.JPG"}
+        alt="about-background"
+        src={process.env.PUBLIC_URL + "/Photo/about-background.jpg"}
       ></img>
     </div>
   );

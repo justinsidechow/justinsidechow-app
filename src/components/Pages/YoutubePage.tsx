@@ -1,5 +1,3 @@
-import { useForm } from "react-hook-form";
-
 const YoutubePage = () => {
   return (
     <div className="container">
@@ -61,29 +59,19 @@ const YoutubePage = () => {
         >
           <img
             className="column-link-logo"
+            alt="youtube-cion"
             src={process.env.PUBLIC_URL + "/Logo/youtube-icon.png"}
           />
           {"youtube.com"}
         </a>
       </div>
-      {/*
-    <img
-      className="page-background-image"
-      src={process.env.PUBLIC_URL + "/Photo/computer_background.JPG"}
-    ></img>
-     */}
       <img
         className="main-image"
-        src={process.env.PUBLIC_URL + "/Photo/youtube-background.JPG"}
+        alt="youtube-background"
+        src={process.env.PUBLIC_URL + "/Photo/youtube-background.jpg"}
       ></img>
     </div>
   );
 };
-
-/*
-YoutubeEmbed.propTypes = {
-  embedId: PropTypes.string.isRequired
-};
-*/
 
 export default YoutubePage;

@@ -24,7 +24,6 @@ const ContactPage = () => {
 
   const onSubmit = (data: any) => {
     // console.log(data);
-    const form = document.querySelector("#contact-form");
 
     generateContactNumber();
 
@@ -125,32 +124,12 @@ const ContactPage = () => {
             <p className={statusMessageClass}>{statusMessage}</p>
             <input className="input-button" type="submit" value="Send" />
           </form>
-          {/*<form
-            className="column-contact"
-            id="contact-form"
-            onSubmit={handleSubmit(onSubmit)}
-          >
-            <input
-              type="text"
-              placeholder="Name"
-              {...register("user_name", { required: true })}
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              {...register("user_email", { required: true })}
-            />
-            <textarea
-              placeholder="Message"
-              {...register("message", { required: true })}
-            />
-            <input className="input-button" type="submit" value="Send" />
-          </form>*/}
         </div>
       </div>
       <img
         className="main-image"
-        src={process.env.PUBLIC_URL + "/Photo/contact-background.JPG"}
+        alt="contact-background"
+        src={process.env.PUBLIC_URL + "/Photo/contact-background.jpg"}
       ></img>
     </div>
   );
