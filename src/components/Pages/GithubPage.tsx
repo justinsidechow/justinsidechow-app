@@ -19,7 +19,7 @@ const GithubPage = () => {
             <br></br>
             <br></br>
             <div>
-              <b>Repository:</b> <div className="red">PRIVATE</div>
+              <b>Repository:</b> <div className="green">PUBLIC</div>
             </div>
             <br></br>
             <b>Languages used:</b> Typescript / React / NodeJS / HTML / CSS
@@ -27,7 +27,7 @@ const GithubPage = () => {
             <b>Platforms used:</b> AWS (Lightsail/Route53), Visual Studio Code
             <br></br> <br></br>
             <b>Timeframe:</b> May 2021 - July 2021{" "}
-            <div className="red">FINISHED</div>
+            <div className="green">FINISHED</div>
             <br></br> <br></br>
             This website is the hub for all my projects where visiters can
             easily understand the purpose and inspirations of those creations.
