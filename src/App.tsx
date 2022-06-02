@@ -29,7 +29,7 @@ function App() {
               <Route exact path="/github">
                 {GithubPage}
               </Route>
-              <Route exact path="/linkedin">
+              {/* <Route exact path="/linkedin">
                 {LinkedinPage}
               </Route>
               <Route exact path="/twitch">
@@ -40,7 +40,7 @@ function App() {
               </Route>
               <Route exact path="/mausoleum">
                 {MausoleumPage}
-              </Route>
+              </Route> */}
               <Route exact path="/contact">
                 <ContactPage />
               </Route>
