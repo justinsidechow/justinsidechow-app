@@ -9,12 +9,12 @@ const MenuItems = [
     url: "/github",
     pageName: "GithubPage",
   },
-  /*{
+  {
     title: "Linkedin",
     url: "/linkedin",
     pageName: "AboutPage",
-  },*/
-  {
+  },
+  /*{
     title: "Twitch",
     url: "/twitch",
     pageName: "TwitchPage",
@@ -28,8 +28,7 @@ const MenuItems = [
     title: "Mausoleum",
     url: "/mausoleum",
     pageName: "MausoleumPage",
-  },
-  {
+  } */ {
     title: "Contact",
     url: "/contact",
     pageName: "ContactPage",

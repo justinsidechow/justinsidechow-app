@@ -1,116 +1,204 @@
-import { Component } from "react";
-import React from "react";
-import "./Footer.css";
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
+import Link from "@mui/material/Link";
+import { CardMedia, CardActionArea, Card } from "@mui/material";
 
-/*
-this is kind of a disgusting way to implement copyright footer
-and i believe there is a better way to implement this.
-BUT i really wanted to make the copyright-link to pop up like
-the navbar so i created a list to put the correct display: 
-for the copyright-link.
- */
+function SocialIcons() {
+  return (
+    <Box
+      sx={{
+        display: "flex",
+        mb: "0.5em",
+        padding: "auto",
+        alignItems: "center",
+        justifyContent: "safe center",
+      }}
+    >
+      <Card
+        sx={{
+          border: "none",
+          boxShadow: "none",
+          backgroundColor: "#282828",
+        }}
+      >
+        <CardActionArea href="https://twitter.com/justinsidechow">
+          <CardMedia
+            component="img"
+            image={process.env.PUBLIC_URL + "/Logo/twitter-icon.png"}
+            title="twitter"
+            sx={{
+              border: "none",
+              boxShadow: "none",
+              height: "3em",
+              padding: "0.5em",
+              transition: "100ms",
+              "&:hover": {
+                transform: "scale(1.5, 1.5)",
+              },
+            }}
+          />
+        </CardActionArea>
+      </Card>
+      <Card
+        sx={{
+          border: "none",
+          boxShadow: "none",
+          backgroundColor: "#282828",
+        }}
+      >
+        <CardActionArea href="https://www.instagram.com/justinsidechow/">
+          <CardMedia
+            component="img"
+            image={process.env.PUBLIC_URL + "/Logo/instagram-icon.png"}
+            title="instagram"
+            sx={{
+              border: "none",
+              boxShadow: "none",
+              height: "3em",
+              padding: "0.5em",
+              transition: "100ms",
+              "&:hover": {
+                transform: "scale(1.5, 1.5)",
+              },
+            }}
+          />
+        </CardActionArea>
+      </Card>
+      <Card
+        sx={{
+          border: "none",
+          boxShadow: "none",
+          backgroundColor: "#282828",
+        }}
+      >
+        <CardActionArea href="https://github.com/justinsidechow">
+          <CardMedia
+            component="img"
+            image={process.env.PUBLIC_URL + "/Logo/github-icon.png"}
+            title="github"
+            sx={{
+              border: "none",
+              boxShadow: "none",
+              height: "3em",
+              padding: "0.5em",
+              transition: "100ms",
+              "&:hover": {
+                transform: "scale(1.5, 1.5)",
+              },
+            }}
+          />
+        </CardActionArea>
+      </Card>
+      <Card
+        sx={{
+          border: "none",
+          boxShadow: "none",
+          backgroundColor: "#282828",
+        }}
+      >
+        <CardActionArea href="https://www.linkedin.com/in/justinsidechow/">
+          <CardMedia
+            component="img"
+            image={process.env.PUBLIC_URL + "/Logo/linkedin-icon.png"}
+            title="linkedin"
+            sx={{
+              border: "none",
+              boxShadow: "none",
+              height: "3em",
+              padding: "0.5em",
+              transition: "100ms",
+              "&:hover": {
+                transform: "scale(1.5, 1.5)",
+              },
+            }}
+          />
+        </CardActionArea>
+      </Card>
+      <Card
+        sx={{
+          border: "none",
+          boxShadow: "none",
+          backgroundColor: "#282828",
+        }}
+      >
+        <CardActionArea href="mailto:justinsidechow@gmail.com">
+          <CardMedia
+            component="img"
+            image={process.env.PUBLIC_URL + "/Logo/email-icon.png"}
+            title="email"
+            sx={{
+              border: "none",
+              boxShadow: "none",
+              height: "3em",
+              padding: "0.5em",
+              transition: "100ms",
+              "&:hover": {
+                transform: "scale(1.5, 1.5)",
+              },
+            }}
+          />
+        </CardActionArea>
+      </Card>
+    </Box>
+  );
+}
 
-class Footer extends Component {
-  icon_business() {
-    return (
-      <div className="social">
-        <a href="https://github.com/justinsidechow">
-          <img
-            className="social-icon"
-            alt="github"
-            src={process.env.PUBLIC_URL + "/Logo/github-icon.png"}
-          />
-        </a>
-        {/*
-        <a href="https://www.linkedin.com/in/justinsidechow/">
-          <img
-            className="social-icon"
-            src={process.env.PUBLIC_URL + "/Logo/linkedin-icon.png"}
-          />
-        </a> */}
-        <a href="https://twitch.tv/jbooty">
-          <img
-            className="social-icon"
-            alt="twitch"
-            src={process.env.PUBLIC_URL + "/Logo/twitch-icon.png"}
-          />
-        </a>
-        <a href="https://www.youtube.com/channel/UCQ1fJzVpKueH3K3qRDIjgVg">
-          <img
-            className="social-icon"
-            alt="youtube"
-            src={process.env.PUBLIC_URL + "/Logo/youtube-icon.png"}
-          />
-        </a>
-        <a href="https://mausoleumclothing.com">
-          <img
-            className="social-icon"
-            alt="mausoleum"
-            src={process.env.PUBLIC_URL + "/Logo/clothing-icon.png"}
-          />
-        </a>
-      </div>
-    );
-  }
+function Copyright() {
+  return (
+    <Typography variant="body2" sx={{ color: "white" }} align="center">
+      {"Copyright © "}
+      <Link
+        sx={{
+          color: "white",
+          paddingBottom: "1em",
+          paddingTop: "1em",
+          "&:hover": {
+            paddingTop: "0em",
+            textShadow: "0 0 2px #FFFFFF",
+          },
+        }}
+        color="inherit"
+        href="https://github.com/justinsidechow/justinsidechow-app"
+      >
+        JustinsideChow
+      </Link>{" "}
+      {new Date().getFullYear()}
+    </Typography>
+  );
+}
 
-  icon_social() {
-    return (
-      <div className="social">
-        <a href="https://twitter.com/justinsidechow">
-          <img
-            className="social-icon"
-            alt="twitch"
-            src={process.env.PUBLIC_URL + "/Logo/twitter-icon.png"}
-          />
-        </a>
-        <a href="https://www.instagram.com/justinsidechow/">
-          <img
-            className="social-icon"
-            alt="instagram"
-            src={process.env.PUBLIC_URL + "/Logo/instagram-icon.png"}
-          />
-        </a>
-        <a href="mailto:justinsidechow@gmail.com">
-          <img
-            className="social-icon"
-            alt="email"
-            src={process.env.PUBLIC_URL + "/Logo/email-icon.png"}
-          />
-        </a>
-      </div>
-    );
-  }
+// interface FooterProps {
+//   description: string;
+//   title: string;
+// }
 
-  render() {
-    return (
-      <footer className="footer">
-        {this.icon_business()}
-        {this.icon_social()}
-        <div>
-          <div className="website-description">
-            Justinsidechow.com written in
-          </div>
-          <div className="website-description">
-            Typescript / React / NodeJS / HTML / CSS
-          </div>
-          <div className="website-description">by Justin Chow</div>
-        </div>
-        <ul className="copyright">
-          <li className="copyright-left-right">
-            Copyright &copy; {" " + new Date().getFullYear()}
-          </li>
-          <li>
-            <div>
-              <a className="copyright-link" href="/contact">
-                JustinsideChow
-              </a>
-            </div>
-          </li>
-          <li className="copyright-left-right">All Rights Reserved</li>
-        </ul>
-      </footer>
-    );
-  }
+function Footer() {
+  return (
+    <Box
+      component="footer"
+      sx={{
+        display: "flex",
+        backgroundColor: "#282828",
+        py: 3,
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <Container maxWidth="lg">
+        <SocialIcons />
+        <Typography
+          variant="body2"
+          sx={{ color: "white", margin: "0.5em" }}
+          align="center"
+        >
+          Created by Man 'Justin' Chow
+        </Typography>
+        <Copyright />
+      </Container>
+    </Box>
+  );
 }
 
 export default Footer;

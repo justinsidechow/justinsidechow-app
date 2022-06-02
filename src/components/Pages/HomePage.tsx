@@ -1,29 +1,28 @@
 import "./Page.css";
-import { Link } from "react-router-dom";
+import { Typography, Box, Container } from "@mui/material";
 
-const HomePage = () => {
+function HomePage() {
   return (
-    <div>
-      <div className="container">
-        <img
-          className="main-image-home"
-          alt="home-background"
-          src={process.env.PUBLIC_URL + "/Photo/home-background.jpg"}
-        ></img>
-        <div className="home-page-mission">
-          <div className="home-page-full-name">Justin Chow</div>
-          Programming the future
-          <br></br>
-          One line at a time
-          <br></br>
-          <br></br>
-          <Link className="learn-more-button" to="/about">
-            Learn more here
-          </Link>
-        </div>
-      </div>
-    </div>
+    <Box
+      sx={{
+        display: "flex",
+        bgcolor: "background.paper",
+        padding: "3em",
+      }}
+    >
+      <Container maxWidth="sm" sx={{}}>
+        <Typography component="h1" variant="h2" color="black" gutterBottom>
+          Album layout
+        </Typography>
+        <Typography variant="h5" color="black" paragraph>
+          Programming the Future
+        </Typography>
+        <Typography variant="h5" color="black" paragraph>
+          One Line at a Time
+        </Typography>
+      </Container>
+    </Box>
   );
-};
+}
 
 export default HomePage;
