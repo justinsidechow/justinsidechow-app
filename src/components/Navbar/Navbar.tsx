@@ -3,7 +3,6 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
@@ -11,14 +10,17 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { CardMedia } from "@mui/material";
 
-const pages = [
-  ["About", "/about"],
-  ["Github", "/github"],
-  ["Linkedin", "https://www.linkedin.com/in/justinsidechow/"],
-  ["Contact", "/contact"],
-];
+import { useAppSelector, useAppDispatch } from "../../redux/hooks";
+import { store } from "../../redux/store";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
+const pages = [["About"], ["Github"], ["Linkedin"], ["Contact"]];
 
 function Navbar() {
+  const dispatch = useAppDispatch();
+  let navigate = useNavigate();
+
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
   );
@@ -29,6 +31,26 @@ function Navbar() {
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
+  };
+
+  const handlePageDispatch = (page: String) => {
+    switch (page) {
+      case "Home":
+        navigate("/");
+        break;
+      case "About":
+        navigate("/about");
+        break;
+      case "Github":
+        navigate("/github");
+        break;
+      case "Linkedin":
+        window.location.replace("https://www.linkedin.com/in/justinsidechow/");
+        break;
+      case "Contact":
+        navigate("/contact");
+        break;
+    }
   };
 
   return (
@@ -62,22 +84,25 @@ function Navbar() {
               }}
               image={process.env.PUBLIC_URL + "/Logo/justinsidechow-logo.png"}
             />
-            <Typography
-              variant="h6"
-              noWrap
-              component="a"
-              href="/"
+            <Button
+              key={"home"}
+              onClick={() => handlePageDispatch("Home")}
+              disableRipple
               sx={{
+                textTransform: "none",
                 fontFamily: "monospace",
                 fontWeight: 700,
-                letterSpacing: ".3rem",
+                letterSpacing: "0.3rem",
+                fontSize: "1.5em",
                 color: "inherit",
-                textDecoration: "none",
                 transition: "100ms",
-                paddingRight: "1em",
+                textDecoration: "none",
                 paddingTop: "0.5em",
                 paddingBottom: "0.5em",
+                alignItems: "center",
+                justifyContent: "center",
                 "&:hover": {
+                  backgroundColor: "#282828",
                   paddingTop: "0em",
                   color: "#FFFFFF",
                   textShadow: "0 0 3px #FFFFFF",
@@ -85,7 +110,7 @@ function Navbar() {
               }}
             >
               JustinsideChow
-            </Typography>
+            </Button>
           </Container>
           <Container
             sx={{
@@ -97,8 +122,7 @@ function Navbar() {
             {pages.map((page) => (
               <Button
                 key={page[0]}
-                href={page[1]}
-                onClick={handleCloseNavMenu}
+                onClick={() => handlePageDispatch(page[0])}
                 sx={{
                   color: "white",
                   transition: "100ms",
@@ -157,12 +181,12 @@ function Navbar() {
               justifyContent: "center",
             }}
           >
-            <Typography
-              variant="h5"
-              noWrap
-              component="a"
-              href="/"
+            <Button
+              key={"home"}
+              onClick={() => handlePageDispatch("Home")}
+              disableRipple
               sx={{
+                textTransform: "none",
                 fontFamily: "monospace",
                 fontWeight: 700,
                 letterSpacing: "0.3rem",
@@ -177,6 +201,7 @@ function Navbar() {
                 marginLeft: "auto",
                 marginRight: "auto",
                 "&:hover": {
+                  backgroundColor: "#282828",
                   paddingTop: "0em",
                   color: "#FFFFFF",
                   textShadow: "0 0 3px #FFFFFF",
@@ -184,7 +209,7 @@ function Navbar() {
               }}
             >
               JustinsideChow
-            </Typography>
+            </Button>
           </Container>
           <Container
             sx={{
@@ -230,7 +255,6 @@ function Navbar() {
                 <MenuItem key={page[0]} onClick={handleCloseNavMenu}>
                   <Button
                     key={page[0]}
-                    href={page[1]}
                     onClick={handleCloseNavMenu}
                     sx={{
                       color: "white",

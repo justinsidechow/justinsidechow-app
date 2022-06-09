@@ -1,9 +1,6 @@
-const LinkedinPage = () => {
-  return (
-    <div>
-      <h3>Linkedin Page</h3>
-    </div>
-  );
-};
+function LinkedinPage() {
+  window.location.replace("https://www.linkedin.com/in/justinsidechow/");
+  return null;
+}
 
 export default LinkedinPage;
