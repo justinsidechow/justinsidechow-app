@@ -1,10 +1,3 @@
-import {
-  TwitchEmbed,
-  //  TwitchChat,
-  //  TwitchClip,
-  //  TwitchPlayer,
-} from "react-twitch-embed";
-
 import { Component } from "react";
 
 class TwitchPage extends Component {
@@ -17,16 +10,6 @@ class TwitchPage extends Component {
         </div>
         <div className="column-section-twitch">
           <div className="column-center-twitch">
-            <TwitchEmbed
-              className="twitch-video"
-              channel="JBOOTY"
-              id="twitch-embed"
-              theme="dark"
-              width="90vw"
-              height="90vh"
-              muted
-              onVideoPause={() => console.log(":(")}
-            />
           </div>
         </div>
         <div className="column-section">
