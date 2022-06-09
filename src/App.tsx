@@ -10,21 +10,22 @@ import YoutubePage from "./components/Pages/YoutubePage";
 import MausoleumPage from "./components/Pages/MausoleumPage";
 import ContactPage from "./components/Pages/ContactPage";
 import Footer from "./components/Footer/Footer";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <React.Fragment>
-      <section className="App">
-        <BrowserRouter>
-          <NavBar />
-          <div className="content">
-            
-          </div>
-        </BrowserRouter>
+    <section className="App">
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/github" element={<GithubPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
         <Footer />
-      </section>
-    </React.Fragment>
+      </BrowserRouter>
+    </section>
   );
 }
 
