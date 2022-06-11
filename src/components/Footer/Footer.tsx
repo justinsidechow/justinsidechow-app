@@ -5,39 +5,59 @@ import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import { CardMedia, CardActionArea, Card } from "@mui/material";
 
+const socialIconBoxSX = {
+  display: "flex",
+  mb: "0.5em",
+  padding: "auto",
+  alignItems: "center",
+  justifyContent: "safe center",
+};
+
+const footerCardBackgroundSX = {
+  border: "none",
+  boxShadow: "none",
+  backgroundColor: "#282828",
+};
+
+const iconSX = {
+  border: "none",
+  boxShadow: "none",
+  height: "3em",
+  padding: "0.5em",
+  transition: "100ms",
+  "&:hover": {
+    transform: "scale(1.5, 1.5)",
+  },
+};
+
+const copyrightSX = {
+  color: "white",
+  paddingBottom: "1em",
+  paddingTop: "1em",
+  "&:hover": {
+    paddingTop: "0em",
+    textShadow: "0 0 2px #FFFFFF",
+  },
+};
+
+const footerBoxSX = {
+  display: "flex",
+  backgroundColor: "#282828",
+  py: 3,
+  alignItems: "center",
+  justifyContent: "center",
+};
+
 function SocialIcons() {
   return (
-    <Box
-      sx={{
-        display: "flex",
-        mb: "0.5em",
-        padding: "auto",
-        alignItems: "center",
-        justifyContent: "safe center",
-      }}
-    >
-      <Card
-        sx={{
-          border: "none",
-          boxShadow: "none",
-          backgroundColor: "#282828",
-        }}
-      >
+    <Box sx={socialIconBoxSX}>
+      <Card sx={footerCardBackgroundSX}>
         <CardActionArea href="https://twitter.com/justinsidechow">
           <CardMedia
             component="img"
             image={process.env.PUBLIC_URL + "/Logo/twitter-icon.png"}
             title="twitter"
-            sx={{
-              border: "none",
-              boxShadow: "none",
-              height: "3em",
-              padding: "0.5em",
-              transition: "100ms",
-              "&:hover": {
-                transform: "scale(1.5, 1.5)",
-              },
-            }}
+            sx={iconSX}
           />
         </CardActionArea>
       </Card>
@@ -53,16 +73,39 @@ function SocialIcons() {
             component="img"
             image={process.env.PUBLIC_URL + "/Logo/instagram-icon.png"}
             title="instagram"
-            sx={{
-              border: "none",
-              boxShadow: "none",
-              height: "3em",
-              padding: "0.5em",
-              transition: "100ms",
-              "&:hover": {
-                transform: "scale(1.5, 1.5)",
-              },
-            }}
+            sx={iconSX}
+          />
+        </CardActionArea>
+      </Card>
+      <Card
+        sx={{
+          border: "none",
+          boxShadow: "none",
+          backgroundColor: "#282828",
+        }}
+      >
+        <CardActionArea href="https://www.twitch.tv/jbooty">
+          <CardMedia
+            component="img"
+            image={process.env.PUBLIC_URL + "/Logo/twitch-icon.png"}
+            title="instagram"
+            sx={iconSX}
+          />
+        </CardActionArea>
+      </Card>
+      <Card
+        sx={{
+          border: "none",
+          boxShadow: "none",
+          backgroundColor: "#282828",
+        }}
+      >
+        <CardActionArea href="https://www.youtube.com/channel/UCQ1fJzVpKueH3K3qRDIjgVg">
+          <CardMedia
+            component="img"
+            image={process.env.PUBLIC_URL + "/Logo/youtube-icon.png"}
+            title="instagram"
+            sx={iconSX}
           />
         </CardActionArea>
       </Card>
@@ -78,16 +121,7 @@ function SocialIcons() {
             component="img"
             image={process.env.PUBLIC_URL + "/Logo/github-icon.png"}
             title="github"
-            sx={{
-              border: "none",
-              boxShadow: "none",
-              height: "3em",
-              padding: "0.5em",
-              transition: "100ms",
-              "&:hover": {
-                transform: "scale(1.5, 1.5)",
-              },
-            }}
+            sx={iconSX}
           />
         </CardActionArea>
       </Card>
@@ -103,16 +137,7 @@ function SocialIcons() {
             component="img"
             image={process.env.PUBLIC_URL + "/Logo/linkedin-icon.png"}
             title="linkedin"
-            sx={{
-              border: "none",
-              boxShadow: "none",
-              height: "3em",
-              padding: "0.5em",
-              transition: "100ms",
-              "&:hover": {
-                transform: "scale(1.5, 1.5)",
-              },
-            }}
+            sx={iconSX}
           />
         </CardActionArea>
       </Card>
@@ -128,16 +153,7 @@ function SocialIcons() {
             component="img"
             image={process.env.PUBLIC_URL + "/Logo/email-icon.png"}
             title="email"
-            sx={{
-              border: "none",
-              boxShadow: "none",
-              height: "3em",
-              padding: "0.5em",
-              transition: "100ms",
-              "&:hover": {
-                transform: "scale(1.5, 1.5)",
-              },
-            }}
+            sx={iconSX}
           />
         </CardActionArea>
       </Card>
@@ -150,15 +166,7 @@ function Copyright() {
     <Typography variant="body2" sx={{ color: "white" }} align="center">
       {"Copyright © "}
       <Link
-        sx={{
-          color: "white",
-          paddingBottom: "1em",
-          paddingTop: "1em",
-          "&:hover": {
-            paddingTop: "0em",
-            textShadow: "0 0 2px #FFFFFF",
-          },
-        }}
+        sx={copyrightSX}
         color="inherit"
         href="https://github.com/justinsidechow/justinsidechow-app"
       >
@@ -176,16 +184,7 @@ function Copyright() {
 
 function Footer() {
   return (
-    <Box
-      component="footer"
-      sx={{
-        display: "flex",
-        backgroundColor: "#282828",
-        py: 3,
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
+    <Box component="footer" sx={footerBoxSX}>
       <Container maxWidth="lg">
         <SocialIcons />
         <Typography

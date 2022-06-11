@@ -9,11 +9,72 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { CardMedia } from "@mui/material";
-
-import { useAppSelector, useAppDispatch } from "../../redux/hooks";
-import { store } from "../../redux/store";
-import { Link } from "react-router-dom";
+import { useAppDispatch } from "../../redux/hooks";
 import { useNavigate } from "react-router-dom";
+
+const appBarSX = {
+  position: "static",
+  backgroundColor: "#282828",
+  padding: "auto",
+};
+
+const centerSX = {
+  alignItems: "center",
+  justifyContent: "center",
+};
+
+const desktopCenterSX = {
+  display: { xs: "none", md: "flex" },
+  alignItems: "center",
+  justifyContent: "center",
+};
+
+const logoSX = {
+  height: "2em",
+  width: "2em",
+  marginRight: "0.5em",
+};
+
+const titleButtonSX = {
+  textTransform: "none",
+  fontFamily: "monospace",
+  fontWeight: 700,
+  letterSpacing: "0.3rem",
+  fontSize: "1.5em",
+  color: "inherit",
+  transition: "100ms",
+  textDecoration: "none",
+  paddingTop: "0.5em",
+  paddingBottom: "0.5em",
+  alignItems: "center",
+  justifyContent: "center",
+  "&:hover": {
+    backgroundColor: "#282828",
+    paddingTop: "0em",
+    color: "#FFFFFF",
+    textShadow: "0 0 3px #FFFFFF",
+  },
+};
+
+const mobileCenterSX = {
+  display: { xs: "flex", md: "none" },
+  alignItems: "center",
+  justifyContent: "center",
+};
+
+const mobileMenuButtonSX = {
+  display: { xs: "flex", md: "none" },
+  alignItems: "center",
+  justifyContent: "end",
+};
+
+const mobileMenuButtonBackgroundSX = {
+  "& .css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper": {
+    backgroundColor: "#282828",
+  },
+
+  display: { xs: "flex", md: "none" },
+};
 
 const pages = [["About"], ["Github"], ["Linkedin"], ["Contact"]];
 
@@ -48,77 +109,31 @@ function Navbar() {
         window.location.replace("https://www.linkedin.com/in/justinsidechow/");
         break;
       case "Contact":
-        navigate("/contact");
+        window.location.replace("mailto:justinsidechow@gmail.com");
         break;
     }
   };
 
   return (
-    <AppBar
-      sx={{
-        position: "static",
-        backgroundColor: "#282828",
-      }}
-    >
-      <Box
-        maxWidth="x1"
-        sx={{
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
+    <AppBar sx={appBarSX}>
+      <Box maxWidth="x1" sx={centerSX}>
         <Toolbar>
-          {/*end of desktop menu*/}
-          <Container
-            sx={{
-              display: { xs: "none", md: "flex" },
-              alignItems: "center",
-              justifyContent: "start",
-            }}
-          >
+          {/*start of desktop menu*/}
+          <Container sx={desktopCenterSX}>
             <CardMedia
-              sx={{
-                height: "2em",
-                width: "2em",
-                marginRight: "0.5em",
-              }}
+              sx={logoSX}
               image={process.env.PUBLIC_URL + "/Logo/justinsidechow-logo.png"}
             />
             <Button
               key={"home"}
               onClick={() => handlePageDispatch("Home")}
               disableRipple
-              sx={{
-                textTransform: "none",
-                fontFamily: "monospace",
-                fontWeight: 700,
-                letterSpacing: "0.3rem",
-                fontSize: "1.5em",
-                color: "inherit",
-                transition: "100ms",
-                textDecoration: "none",
-                paddingTop: "0.5em",
-                paddingBottom: "0.5em",
-                alignItems: "center",
-                justifyContent: "center",
-                "&:hover": {
-                  backgroundColor: "#282828",
-                  paddingTop: "0em",
-                  color: "#FFFFFF",
-                  textShadow: "0 0 3px #FFFFFF",
-                },
-              }}
+              sx={titleButtonSX}
             >
               JustinsideChow
             </Button>
           </Container>
-          <Container
-            sx={{
-              display: { xs: "none", md: "flex" },
-              alignItems: "center",
-              justifyContent: "end",
-            }}
-          >
+          <Container sx={desktopCenterSX}>
             {pages.map((page) => (
               <Button
                 key={page[0]}
@@ -167,57 +182,18 @@ function Navbar() {
           </Container>
           {/*end of desktop menu*/}
           {/*start of mobile menu*/}
-          <Container
-            sx={{
-              display: { xs: "flex", md: "none" },
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          ></Container>
-          <Container
-            sx={{
-              display: { xs: "flex", md: "none" },
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
+          <Container sx={mobileCenterSX} disableGutters={true}></Container>
+          <Container sx={mobileCenterSX} disableGutters={true}>
             <Button
               key={"home"}
               onClick={() => handlePageDispatch("Home")}
               disableRipple
-              sx={{
-                textTransform: "none",
-                fontFamily: "monospace",
-                fontWeight: 700,
-                letterSpacing: "0.3rem",
-                fontSize: "1.5em",
-                color: "inherit",
-                transition: "100ms",
-                textDecoration: "none",
-                paddingTop: "0.5em",
-                paddingBottom: "0.5em",
-                alignItems: "center",
-                justifyContent: "center",
-                marginLeft: "auto",
-                marginRight: "auto",
-                "&:hover": {
-                  backgroundColor: "#282828",
-                  paddingTop: "0em",
-                  color: "#FFFFFF",
-                  textShadow: "0 0 3px #FFFFFF",
-                },
-              }}
+              sx={titleButtonSX}
             >
               JustinsideChow
             </Button>
           </Container>
-          <Container
-            sx={{
-              display: { xs: "flex", md: "none" },
-              alignItems: "center",
-              justifyContent: "end",
-            }}
-          >
+          <Container sx={mobileMenuButtonSX} disableGutters>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -235,27 +211,21 @@ function Navbar() {
                 vertical: "bottom",
                 horizontal: "left",
               }}
-              keepMounted
               transformOrigin={{
                 vertical: "top",
                 horizontal: "left",
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
-              sx={{
-                "& .css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper":
-                  {
-                    backgroundColor: "#282828",
-                  },
-
-                display: { xs: "flex", md: "none" },
-              }}
+              keepMounted
+              disableScrollLock={true}
+              sx={mobileMenuButtonBackgroundSX}
             >
               {pages.map((page) => (
                 <MenuItem key={page[0]} onClick={handleCloseNavMenu}>
                   <Button
                     key={page[0]}
-                    onClick={handleCloseNavMenu}
+                    onClick={() => handlePageDispatch(page[0])}
                     sx={{
                       color: "white",
                       display: "block",
@@ -263,7 +233,7 @@ function Navbar() {
                       minHeight: "2em",
                       minWidth: "2em",
                       fontSize: "1em",
-                      padding: "1em",
+                      py: "1em",
                       ...(page[0] === "About" && {
                         "&:hover": {
                           color: "#38C6F4",
